@@ -1,0 +1,1137 @@
+/* Resete geral da pagina */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: Roboto;
+}
+img{
+    max-width: 100%;
+}
+/* Remover o highlith azul dos itens */
+html{
+    -webkit-tap-highlight-color: transparent;
+}
+/* Modificando a barra de rolagem */
+body::-webkit-scrollbar{
+    width: 7px;
+    background-color: #DDD;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #ED1E24;
+}
+/* Cabecalho */
+#navbar{
+    background-color: #ED1E24;
+    transition: .3s;
+}
+#navbar .container-header{
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Menu dektop */
+#menu{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+#menu li a{
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: .3s;
+    border-radius: 3px;
+}
+#navbar-list #menu li a:hover{
+    background-color: black;
+}
+/* Menu mobile*/
+#btn-mobile{
+    display: none;
+}
+/* Banner principal */
+.custom-shape-divider-bottom-1624806847{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+.custom-shape-divider-bottom-1624806847 svg{
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+}
+.custom-shape-divider-bottom-1624806847 .shape-fill{
+    fill: #ED1E24;
+}
+#main-banner{
+    background-image: url(../img/Background/Imagem\ de\ Background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+#main-banner .container-banner{
+    width: 100%;
+    max-width: 980px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 95vh;
+    margin: 0 auto;
+}
+#main-banner::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+#banner-info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    margin-top: -20px;
+}
+#banner-info .nome h1, h2{
+    color: white;
+    font-size: 2.5rem;
+}
+#banner-info .nome p{
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+#banner-info a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: white;
+    background-color: #ED1E24;
+    padding: 8px;
+    border-radius: 5px;
+    transition: .3s;
+    font-weight: bold;
+    border: 1px solid black;
+}
+#banner-info a:hover{
+    border: 1px solid white;
+    background-color: black;
+}
+/* Section About */
+#about-section{
+    background-color: #ED1E24;
+    color: white;
+}
+#about-section .container-about{
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+#about-section .container-about h2{
+    font-size: 2rem;
+}
+#about-section .container-about h2::after{
+    display: block;
+    content: '';
+    width: 50%;
+    height: 3px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+#about-section .container-about .conteudo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+#about-section .container-about .conteudo img{
+    width: 85%;
+    transition: .3s;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 30% 70% 70% 30% / 33% 30% 70% 67%; 
+}
+#about-section .container-about .conteudo .textos h3{
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+#about-section .container-about .conteudo .textos .p{
+    margin-bottom: 30px;
+}
+#about-section .container-about .conteudo .textos p{
+    font-size: 1.1rem;
+    opacity: 95%;
+    margin-bottom: 10px;
+}
+#about-section .container-about .conteudo .textos p a{
+    text-decoration: none;
+    color: white;
+    opacity: 100%;
+    font-weight: bold;
+}
+#about-section .container-about .conteudo .textos .link-serviços{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    background-color: white;
+    padding: 8px;
+    border-radius: 5px;
+    transition: .3s;
+    font-weight: bold;
+    border: 2px solid black;
+}
+#about-section .container-about .conteudo .textos .link-serviços:hover{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+/* skills */
+.custom-shape-divider-top-1624807908 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+.custom-shape-divider-top-1624807908 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 93px;
+}
+.custom-shape-divider-top-1624807908 .shape-fill {
+    fill: #ED1E24;
+}
+#skills-section{
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-color: white;
+}
+#skills-section .container-skills{
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#skills-section .container-skills .container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+}
+#skills-section .container-skills .container .skills-container{
+    width: 33.3%;
+    text-align: center;
+    padding: 60px 25px;
+}
+#skills-section .container-skills .container .central{
+    border-left: 1px solid #DDD;
+    border-right: 1px solid #DDD;
+}
+#skills-section .container-skills h2{
+    color: #ED1E24;
+    font-size: 2rem;
+}
+#skills-section .container-skills h2::after{
+    content: '';
+    display: block;
+    width: 50%;
+    height: 3px;
+    background-color: #ED1E24;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+#skills-section .container-skills .container .skills-container img{
+    width: 30%;
+    margin-bottom: 20px;
+}
+#skills-section .container-skills .container .skills-container h3{
+    color: #ED1E24;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+#skills-section .container-skills .container .skills-container .subtitle{
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #ED1E24;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+#skills-section .container-skills .container .skills-container p{
+    font-size: 1rem;
+}
+.custom-shape-divider-bottom-1624810726 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+.custom-shape-divider-bottom-1624810726 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 101px;
+}
+.custom-shape-divider-bottom-1624810726 .shape-fill {
+    fill: #ED1E24;
+}
+/* Jobs */
+#jobs-section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #ED1E24;
+}
+#jobs-section .container-jobs{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#jobs-section .container-jobs h2{
+    font-size: 2rem;
+    color: white;
+}
+#jobs-section .container-jobs h2::after{
+    display: block;
+    content: '';
+    width: 50%;
+    height: 3px;
+    background: white;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+#jobs-section .container-jobs .projetos{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#jobs-section .container-jobs .projetos .card{
+    position: relative;
+    width: 30%;
+    height: 310px;
+    background-color: black;
+    border-radius: 2px;
+}
+#jobs-section .container-jobs .projetos .card .card-img-wrapper{
+    width: 100%;
+    height: 100%;
+}
+.card-img-wrapper img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+    transition: opacity .3s;
+    border-radius: 2px;
+}
+.card:hover .card-img-wrapper img{
+    opacity: .2;
+}
+.projetos .card .card-info{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    transition: .3s;
+    padding: 0px 20px;
+}
+.projetos .card .card-info h4{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.projetos .card .card-info h5{
+    color: white;
+    margin-bottom: 1.5rem;
+}
+.projetos .card .card-info p{
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    max-width: 300px;
+}
+.projetos .card .card-info button{
+    border: none;
+    background-color: #ED1E24;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    padding: 0px;
+    font-weight: bold;
+    transition: .3s;
+    cursor: pointer;
+}
+.projetos .card .card-info button a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+}
+.projetos .card .card-info button:hover{
+    transform: scale(0.9);
+}
+.card:hover .card-info{
+    bottom: 2rem;
+    opacity: 1;
+    visibility: visible;
+}
+/* Section contato whatsApp */
+.custom-shape-divider-top-1624829248{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+.custom-shape-divider-top-1624829248 svg{
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 103px;
+}
+.custom-shape-divider-top-1624829248 .shape-fill{
+    fill: #ED1E24;
+}
+#whatsapp-contato{
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-color: white;
+}
+#whatsapp-contato .container-whatsapp{
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+#whatsapp-contato .container-whatsapp .container-principal{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#whatsapp-contato .container-whatsapp .container-principal img{
+    width: 90px;
+    margin-bottom: 20px;
+}
+#whatsapp-contato .container-whatsapp .container-principal h3{
+    color: black;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+#whatsapp-contato .container-whatsapp .container-principal a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    transition: .3s;
+    font-weight: bold;
+    border: 2px solid black;
+}
+#whatsapp-contato .container-whatsapp .container-principal a:hover{
+    background-color: black;
+    color: white;
+}
+.custom-shape-divider-bottom-1624829676{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+.custom-shape-divider-bottom-1624829676 svg{
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 103px;
+}
+.custom-shape-divider-bottom-1624829676 .shape-fill{
+    fill: #ED1E24;
+}
+/* Rodape */
+#contato{
+    background-color: #ED1E24;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#contato .container-footer{
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+#contato .container-footer .container-footer-principal{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+#contato .container-footer .container-footer-principal h2{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+#contato .container-footer .container-footer-principal p{
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+.custom-shape-divider-top-1624829740{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+.custom-shape-divider-top-1624829740 svg{
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 103px;
+}
+.custom-shape-divider-top-1624829740 .shape-fill{
+    fill: #ED1E24;
+}
+#contato-2{
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+#contato-2 .container-contato2{
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 5px;
+}
+/* Scroll Up */
+.scrollup{
+    position: fixed;
+    right: -56px;
+    bottom: -20%;
+    transition: .3s;
+}
+.scrollup img{
+    width: 45%;
+}
+.show-scroll{
+    bottom: 15px;
+}
+/* Botão whatsApp */
+#div_fixa{
+    position: fixed; 
+    margin: 15px;
+    z-index: 5000;
+    bottom: 0px;
+}
+#div_fixa a img{
+    width: 70%;
+}
+/* ini: Preloader */
+#preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:#ED1E24;
+    z-index: 99999;
+}
+#preloader .inner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
+.bolas > div{
+  display: inline-block;
+  background-color: white;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  margin: 3px;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: animarBola;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.bolas > div:nth-child(1){
+    animation-duration: 0.75s;
+    animation-delay: 0;
+}
+.bolas > div:nth-child(2){
+    animation-duration: 0.75s;
+    animation-delay: 0.12s;
+}
+.bolas > div:nth-child(3){
+    animation-duration: 0.75s;
+    animation-delay: 0.24s;
+}
+@keyframes animarBola{
+    0%{
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+    16%{
+        -webkit-transform: scale(0.1);
+        transform: scale(0.1);
+        opacity: 0.7;
+    }
+    33%{
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1; 
+    } 
+}
+/*end: Preloader*/
+
+/* Animação Scroll */
+[data-anime]{
+    opacity: 0;
+    transition: .5s;
+}
+[data-anime="left"]{
+    transform: translate3d(-50px, 0, 0);
+}
+[data-anime="right"]{
+    transform: translate3d(50px, 0, 0);
+}
+[data-anime="top"]{
+    transform: translate3d(0px, 50px, 0px);
+}
+[data-anime="bottom"]{
+    transform: translate3d(0px, -50px, 0px);
+}
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+/* Responsividade Tablet */
+@media(max-width:780px){
+    /* Cabeçalho */
+    #navbar .container-header{
+        width: 95%;
+    }
+    /* Menu Mobile */
+    #menu{
+        position: absolute;
+        width: 50%;
+        top: 60px;
+        left: -390px;
+        background: #ED1E24;
+        height: 90%;
+        transition: .6s;
+        visibility: hidden;
+        overflow-y: hidden;
+        flex-direction: column;
+        z-index: 10000;
+        text-align: center;
+        justify-content: center;
+        gap: 0;
+    }
+    #navbar-list.active #menu{
+        height: calc(100% - 60px);
+        left: 0;
+        visibility: visible;
+        /*overflow-y: auto;*/
+    }
+    #menu li a{
+        display: block;
+        margin-bottom: 5px;
+        font-size: 1.5rem;
+        border-radius: 0px;
+    }
+    #btn-mobile{
+        display: flex;
+        padding: .5rem 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        color: white;
+    }
+    #hamburger{
+        display: block;
+        width: 20px;
+        border-top: 2px solid;
+        color: white;
+    }
+    #hamburger::after, #hamburger::before{
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+    #navbar-list.active #hamburger{
+        border-top-color: transparent;
+    }
+    #navbar-list.active #hamburger::before{
+        transform: rotate(135deg);
+    }
+    #navbar-list.active #hamburger::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+    /* Banner */
+    #banner-info .nome p{
+        font-size: 1.3rem;
+    }
+    #banner-info a{
+        font-size: 1.2rem;
+    }
+    /* Section About */
+    #about-section .container-about{
+        width: 95%;
+    }
+    #about-section .container-about h2{
+        font-size: 1.7rem;
+    }
+    #about-section .container-about .conteudo .textos h3{
+        font-size: 1.5rem;
+    }
+    #about-section .container-about .conteudo .textos p{
+        font-size: 1rem;
+    }
+    #about-section .container-about .conteudo .textos .link-serviços{
+        font-size: 1.1rem;
+    }
+    /* skills */
+    #skills-section .container-skills h2{
+        font-size: 1.7rem;
+    }
+    #skills-section .container-skills .container{
+        width: 95%;
+    }
+    #skills-section .container-skills .container .skills-container{
+        width: 100%;
+    }
+    #skills-section .container-skills .container .skills-container img{
+        width: 40%;
+    }
+    /* Jobs */
+    #jobs-section .container-jobs{
+        width: 95%;
+        margin: 0 auto;
+    }
+    #jobs-section .container-jobs h2{
+        font-size: 1.7rem;
+    }
+    #jobs-section .container-jobs .projetos{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    #jobs-section .container-jobs .projetos .card{
+        width: 70%;
+        height: 370px;
+        margin-bottom: 10px;
+        background-color: black;
+    }
+    /* Section contato whatsApp */
+    #whatsapp-contato .container-whatsapp{
+        width: 95%;
+    }
+    #whatsapp-contato .container-whatsapp .container-principal img{
+        width: 80px;
+    }
+    #whatsapp-contato .container-whatsapp .container-principal h3{
+        font-size: 1.3rem;
+    }
+    #whatsapp-contato .container-whatsapp .container-principal a{
+        font-size: 1.2rem;
+    }
+    /* Rodape */
+    #contato .container-footer{
+        width: 95%;
+    }
+    #contato .container-footer .container-footer-principal p{
+        font-size: 1rem;
+    }
+    #contato-2 .container-contato2{
+        width: 95%;
+    }
+    [data-anime="right"]{
+        transform: translate3d(0px, 0, 0);
+    }
+
+    /* Responsividade - 450px */
+    @media(max-width:450px){
+        /* Menu Mobile */
+        #menu{
+            width: 50%;
+            height: 90%;
+            top: 64px;
+            left: -230px;
+            gap: 0;
+        }
+        #navbar-list.active #menu{
+            height: calc(100% - 64px);
+            left: 0px;
+        }
+        #menu li a{
+            display: block;
+            margin-bottom: 5px;
+            font-size: 1.3rem;
+            padding: 10px;
+            border-radius: 0px;
+        }
+        /* Banner */
+        #main-banner .container-banner{
+            width: 95%;
+            height: 90vh;
+        }
+        #banner-info .nome h1{
+            font-size: 2rem;
+        }
+        #banner-info .nome h2{
+            font-size: 1.8rem;
+        }
+        #banner-info .nome p{
+            font-size: 1.2rem;
+        }
+        #banner-info a{
+            font-size: 1.2rem;
+            padding: 8px;
+        }
+        /* Section About */
+        #about-section .container-about .conteudo{
+            width: 95%;
+            flex-direction: column;
+            margin-top: 10px;
+        }
+        #about-section .container-about .conteudo img{
+            width: 170px;
+            margin-bottom: 20px;
+        }
+        #about-section .container-about .conteudo .textos{
+            text-align: center;
+        }
+        #about-section .container-about .conteudo .textos h3{
+            font-size: 1.5rem;
+        }
+        #about-section .container-about .conteudo .textos .p{
+            text-align: left;
+        }
+        #about-section .container-about .conteudo .textos p{
+            font-size: 1rem;
+        }
+        #about-section .container-about .conteudo .textos .link-serviços{
+            font-size: 1rem;
+        }
+        /* skills */
+        #skills-section .container-skills{
+            width: 95%;
+        }
+        #skills-section .container-skills .container{
+            width: 95%;
+            flex-direction: column;
+        }
+        #skills-section .container-skills .container .skills-container{
+            width: 100%;
+            padding: 25px;
+        }
+        #skills-section .container-skills .container .central{
+            border-left: 0px solid #DDD;
+            border-right: 0px solid #DDD;
+            border-top: 1px solid #DDD;
+            border-bottom: 1px solid #DDD;
+        }
+        #skills-section .container-skills .container .skills-container img{
+            width: 25%;
+        }
+        #skills-section .container-skills .container .skills-container h3{
+            font-size: 1.4rem;
+        }
+        #skills-section .container-skills .container .skills-container .subtitle{
+            font-size: 1rem;
+            margin-top: 20px;
+        }
+        #skills-section .container-skills .container .skills-container p{
+            font-size: 1rem;
+        }
+        /* Jobs */
+        #jobs-section .container-jobs .projetos .card{
+            width: 100%;
+            height: 350px;
+            margin-bottom: 20px;
+        }
+        #jobs-section .container-jobs .projetos .card .card-info h4{
+            font-size: 2rem;
+        }
+        #jobs-section .container-jobs .projetos .card .card-info h5{
+            margin-bottom: 1rem;
+        }
+        #jobs-section .container-jobs .projetos .card .card-info p{
+            font-size: 1rem;
+        }
+        #jobs-section .container-jobs .projetos .card .card-info button{
+            font-size: 1.1rem;
+        }
+        /* Section contato whatsApp */
+        #whatsapp-contato .container-whatsapp .container-principal img{
+            width: 70px;
+        }
+        #whatsapp-contato .container-whatsapp .container-principal h3{
+            font-size: 1.2rem;
+        }
+        #whatsapp-contato .container-whatsapp .container-principal a{
+            font-size: 1rem;
+        }
+        /* Rodape */
+        #contato .container-footer{
+            width: 95%;
+        }
+        #contato .container-footer .container-footer-principal h2{
+            font-size: 1.7rem;
+        }
+        #contato .container-footer .container-footer-principal p{
+            font-size: 1rem;
+        }
+        #contato-2 .container-contato2{
+            width: 95%;
+        }
+        #contato-2 .container-contato2 p{
+            font-size: 1rem;
+        }
+        #contato-2 .direitos a{
+            font-size: 1rem;
+        }
+        /* Scroll Up */
+        .scrollup{
+            right: -70px;
+        }
+        .scrollup img{
+            width: 40%;
+        }
+        .show-scroll{
+            bottom: 15px;
+        }
+
+        /* Responsividade 375px */
+        @media(max-width:375px){
+            /* Banner */
+            #banner-info .nome h2{
+                font-size: 1.7rem;
+            }
+            #banner-info .nome p{
+                font-size: 1.1rem;
+            }
+            #banner-info a{
+                font-size: 1.1rem;
+            }
+            /* About */
+            #about-section .container-about .conteudo .textos h3{
+                font-size: 1.4rem;
+            }
+            #about-section .container-about .conteudo img{
+                 width: 150px;
+            }
+            /* Jobs */
+            #jobs-section .container-jobs .projetos .card{
+                height: 300px;
+            }
+            #jobs-section .container-jobs .projetos .card .card-info h4{
+                font-size: 1.7rem;
+            }
+            #jobs-section .container-jobs .projetos .card .card-info h5{
+                font-size: 0.9rem;
+            }
+            #jobs-section .container-jobs .projetos .card .card-info p{
+                font-size: 1rem;
+            }
+            #jobs-section .container-jobs .projetos .card .card-info button{
+                font-size: 1.1rem;
+            }
+            /* Section contato whatsApp */
+            #whatsapp-contato .container-whatsapp .container-principal h3{
+                font-size: 1.1rem;
+            }
+            /* Rodape */
+            #contato .container-footer .container-footer-principal h2{
+                font-size: 1.5rem;
+            }
+            #contato-2 .container-contato2 p{
+                font-size: 0.9rem;
+            }
+            #contato-2 .direitos a{
+                font-size: 0.9rem;
+            }
+
+            /* Responsividade 320px */
+            @media(max-width:320px){
+                /* Cabecalho */
+                #navbar img{
+                    width: 80%;
+                }
+                /* Menu Mobile */
+                #menu{
+                    top: 50px;
+                }
+                /* Banner */
+                #banner-info .nome h1{
+                    font-size: 1.5rem;
+                }
+                #banner-info .nome h2{
+                    font-size: 1.5rem;
+                }
+                #banner-info .nome p{
+                    font-size: 1rem;
+                }
+                #banner-info a{
+                    font-size: 1rem;
+                }
+                /* About */
+                #about-section .container-about h2{
+                    font-size: 1.5rem;
+                }
+                #about-section .container-about .conteudo img{
+                    width: 140px;
+                }
+                #about-section .container-about .conteudo .textos h3{
+                    font-size: 1.3rem;
+                }
+                #about-section .container-about .conteudo .textos p{
+                    font-size: 0.9rem;
+                }
+                #about-section .container-about .conteudo .textos .link-serviços{
+                    font-size: 0.9rem;
+                }
+                /* skills */
+                #skills-section .container-skills h2{
+                    font-size: 1.5em;
+                }
+                #skills-section .container-skills .container .skills-container h3{
+                    font-size: 1.3rem;
+                }
+                #skills-section .container-skills .container .skills-container p{
+                    font-size: 0.9rem;
+                }
+                /* Jobs */
+                #jobs-section .container-jobs h2{
+                    font-size: 1.5rem;
+                }
+                #jobs-section .container-jobs .projetos .card{
+                    height: 250px;
+                }
+                #jobs-section .container-jobs .projetos .card .card-info h4{
+                    font-size: 1.5rem;
+                }
+                #jobs-section .container-jobs .projetos .card .card-info h5{
+                    font-size: 0.9rem;
+                }
+                #jobs-section .container-jobs .projetos .card .card-info p{
+                    font-size: 0.9rem;
+                }
+                #jobs-section .container-jobs .projetos .card .card-info button{
+                    font-size: 1rem;
+                }
+                 /* Section contato whatsApp */
+                #whatsapp-contato .container-whatsapp .container-principal img{
+                    width: 60px;
+                }
+                #whatsapp-contato .container-whatsapp .container-principal h3{
+                    font-size: 1rem;
+                }
+                /* Rodape */
+                #contato .container-footer .container-footer-principal h2{
+                    font-size: 1.3rem;
+                }
+                #contato .container-footer .container-footer-principal p{
+                    font-size: 0.9rem;
+                }
+                #contato-2 .container-contato2 p{
+                    font-size: 0.9rem;
+                }
+
+                /* Responsividade 280px */
+                @media(max-width:280px){
+                    /* About */
+                    #about-section .container-about h2{
+                        font-size: 1.3rem;
+                    }
+                    #about-section .container-about .conteudo .textos h3{
+                        font-size: 1.2rem;
+                    }
+                    #about-section .container-about .conteudo .textos .link-serviços{
+                        font-size: 0.9rem;
+                    }
+                    /* skills */
+                    #skills-section .container-skills h2{
+                        font-size: 1.3rem;
+                    }
+                    #skills-section .container-skills .container .skills-container h3{
+                        font-size: 1.2rem;
+                    }
+                    /* Jobs */
+                    #jobs-section .container-jobs h2{
+                        font-size: 1.3rem;
+                    }
+                    #jobs-section .container-jobs .projetos .card .card-info h4{
+                        font-size: 1.3rem;
+                    }
+                    /* Section contato whatsApp */
+                    #whatsapp-contato .container-whatsapp .container-principal h3{
+                        font-size: 0.9rem;
+                    }
+                    #whatsapp-contato .container-whatsapp .container-principal a{
+                        font-size: 0.9rem;
+                    }
+                    /* Rodape */
+                    #contato .container-footer .container-footer-principal h2{
+                        font-size: 1.2rem;
+                    }
+                    #contato .container-footer .container-footer-principal p{
+                        font-size: 0.8rem;
+                    }
+                    #contato-2 .container-contato2 p{
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+}
