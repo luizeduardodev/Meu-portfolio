@@ -14,11 +14,11 @@ const debounce = function(func, wait, immediate){
     };
 };
 
-var target = document.querySelectorAll('[data-anime]');
-var animationClass = 'animate';
+let target = document.querySelectorAll('[data-anime]');
+let animationClass = 'animate';
 
 function animeScroll(){
-    var windowTop = window.pageYOffset + ((window.innerHeight * 3) / 4);
+    let windowTop = window.pageYOffset + ((window.innerHeight * 3) / 4);
     target.forEach(function(element){
         if((windowTop) > element.offsetTop){
             element.classList.add(animationClass);
@@ -60,12 +60,14 @@ BtnMobile.addEventListener('touchstart', toggleMenu);
 
 //Função para fechar o menu assim que clicar em um link do menu;
 const navLink = document.querySelectorAll('.nav__link');
+const clicarFora = document.getElementById('main-banner');
 
 function linkAction(){
     const navMenu = document.getElementById('navbar-list');
     navMenu.classList.remove('active');
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
+clicarFora.addEventListener('click', linkAction);
 
 /* Mostrar scroll top */
 function scrollUp(){

@@ -205,28 +205,10 @@ body::-webkit-scrollbar-thumb{
     border: 2px solid white;
 }
 /* skills */
-.custom-shape-divider-top-1624807908 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-.custom-shape-divider-top-1624807908 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 93px;
-}
-.custom-shape-divider-top-1624807908 .shape-fill {
-    fill: #ED1E24;
-}
 #skills-section{
     position: relative;
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-color: white;
 }
 #skills-section .container-skills{
@@ -286,27 +268,10 @@ body::-webkit-scrollbar-thumb{
 #skills-section .container-skills .container .skills-container p{
     font-size: 1rem;
 }
-.custom-shape-divider-bottom-1624810726 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-.custom-shape-divider-bottom-1624810726 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 101px;
-}
-.custom-shape-divider-bottom-1624810726 .shape-fill {
-    fill: #ED1E24;
-}
 /* Jobs */
 #jobs-section{
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-color: #ED1E24;
 }
 #jobs-section .container-jobs{
@@ -434,7 +399,6 @@ body::-webkit-scrollbar-thumb{
 #contato .container-footer .container-footer-principal .container-social{
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
@@ -568,10 +532,10 @@ body::-webkit-scrollbar-thumb{
     #menu{
         position: absolute;
         width: 50%;
-        top: 60px;
+        top: 64px;
         left: -390px;
         background: #ED1E24;
-        height: 90%;
+        height: 100%;
         transition: .6s;
         visibility: hidden;
         overflow-y: hidden;
@@ -582,10 +546,8 @@ body::-webkit-scrollbar-thumb{
         gap: 0;
     }
     #navbar-list.active #menu{
-        height: calc(100% - 60px);
         left: 0;
         visibility: visible;
-        /*overflow-y: auto;*/
     }
     #menu li a{
         display: block;
@@ -693,6 +655,9 @@ body::-webkit-scrollbar-thumb{
     #contato .container-footer .container-footer-principal .subtitle{
         font-size: 1rem;
     }
+    #contato .container-footer .container-footer-principal .container-social{
+        flex-wrap: wrap;
+    }
     #contato .container-footer .container-footer-principal .container-social .card{
         width: 50%;
     }
@@ -712,27 +677,12 @@ body::-webkit-scrollbar-thumb{
     /* Responsividade - 450px */
     @media(max-width:450px){
         /* Menu Mobile */
-        #menu{
-            width: 50%;
-            height: 90%;
-            top: 64px;
-            left: -230px;
-            gap: 0;
-        }
-        #navbar-list.active #menu{
-            height: calc(100% - 64px);
-            left: 0px;
-        }
         #menu li a{
-            display: block;
-            margin-bottom: 5px;
             font-size: 1.3rem;
-            border-radius: 0px;
         }
         /* Banner */
         #main-banner .container-banner{
             width: 95%;
-            height: 90vh;
         }
         #banner-info .nome h1{
             font-size: 2rem;
@@ -795,7 +745,7 @@ body::-webkit-scrollbar-thumb{
             width: 25%;
         }
         #skills-section .container-skills .container .skills-container h3{
-            font-size: 1.4rem;
+            font-size: 1.3rem;
         }
         #skills-section .container-skills .container .skills-container .subtitle{
             font-size: 1rem;
@@ -886,7 +836,10 @@ body::-webkit-scrollbar-thumb{
             #contato-2 .container-contato2 p{
                 font-size: 0.9rem;
             }
-            #contato-2 .direitos a{
+            #contato-2{
+                font-size: 0.9rem;
+            }
+            #contato-2 .direitos{
                 font-size: 0.9rem;
             }
 
@@ -898,7 +851,7 @@ body::-webkit-scrollbar-thumb{
                 }
                 /* Menu Mobile */
                 #menu{
-                    top: 50px;
+                    top: 52px;
                 }
                 /* Banner */
                 #banner-info .nome h1{
@@ -935,7 +888,7 @@ body::-webkit-scrollbar-thumb{
                     font-size: 1.5em;
                 }
                 #skills-section .container-skills .container .skills-container h3{
-                    font-size: 1.3rem;
+                    font-size: 1.2rem;
                 }
                 #skills-section .container-skills .container .skills-container p{
                     font-size: 0.9rem;
@@ -970,6 +923,9 @@ body::-webkit-scrollbar-thumb{
                     font-size: 2rem;
                 }
                 #contato-2 .container-contato2 p{
+                    font-size: 0.9rem;
+                }
+                #contato-2 .direitos{
                     font-size: 0.9rem;
                 }
                 #contato-2 .direitos a{
@@ -1013,6 +969,9 @@ body::-webkit-scrollbar-thumb{
                         font-size: 0.9rem;
                     }
                     #contato-2 .container-contato2 p{
+                        font-size: 0.8rem;
+                    }
+                    #contato-2 .direitos{
                         font-size: 0.8rem;
                     }
                     #contato-2 a{
