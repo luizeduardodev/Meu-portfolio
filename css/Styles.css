@@ -76,7 +76,8 @@ body::-webkit-scrollbar-thumb{
     fill: #ED1E24;
 }
 #main-banner{
-    background: url(../img/Background/Imagem\ de\ Background.jpg) center;
+    background-image: url(../img/Background/Imagem\ de\ Background.jpg);
+    background-position: center;
     background-size: cover;
     position: relative;
 }
