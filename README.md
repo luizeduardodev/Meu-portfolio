@@ -1,5 +1,5 @@
 <h1 align="center">
-  Portfólio
+  😍 Meu Portfólio
 </h1>
 
 <p align="center">Projeto do meu Portfólio</p>
@@ -10,10 +10,10 @@
   <a href="https://luizeduardodev.netlify.app/">Clique aqui para visitar o projeto</a>
 </h4>
 
-## 💼 Tecnologias utilizadas
-Para o desenvolvimento deste site utilizei as seguintes tecnologias:
+## 🚀 Tecnologias utilizadas
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- HTML;
-- CSS;
+- Html5;
+- Css3;
 - Javascript;
 - Jquery;
