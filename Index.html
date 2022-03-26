@@ -1,270 +1,339 @@
 <!doctype html>
 <html lang="pt-br">
 
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio | Luiz Eduardo - Desenvolvedor Front-End</title>
-    <meta name="description" content="Desenvolvedor Front-End e estudante de Ciência da Computação.">
-    <link rel="canonical" href="https://luizeduardodev.netlify.app/">
-    <meta name="author" content="Luiz Eduardo">
-    <meta name="robots" content="index">
-    <meta name="googlebot" content="index">
-    <meta name="url" content="https://luizeduardodev.netlify.app/">
-    <meta name="copyright" content="Luiz Eduardo 2021">
-    <meta http-equiv="content-language" content="pt-br">
-    <meta property="og:title" content="Portfólio | Luiz Eduardo - Desenvolvedor Front-End">
-    <meta property="og:description" content="Desenvolvedor Front-End e estudante de Ciência da Computação.">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luiz Eduardo - Front-End Developer</title>
+  <meta name="description"
+    content="Olá, me chamo Luiz Eduardo e sou Desenvolvedor FrontEnd e acadêmico em Ciência da Computação">
+  <link rel="canonical" href="https://luizeduardodev.netlify.app/">
+  <meta name="author" content="Luiz Eduardo">
+  <meta name="robots" content="index">
+  <meta name="googlebot" content="index">
+  <meta name="url" content="https://luizeduardodev.netlify.app/">
+  <meta name="copyright" content="Luiz Eduardo 2022">
+  <meta property="og:title" content="Portfólio | Luiz Eduardo - Front-End Developer">
+  <meta property="og:description"
+    content="Olá, me chamo Luiz Eduardo e sou Desenvolvedor FrontEnd e acadêmico em Ciência da Computação">
 
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/6e587148a4.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/Styles.css">
-    <link rel="icon" href="./assets/img/Icon.png">
-  </head>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/b47724bbe9.js" crossorigin="anonymous"></script>
 
-  <body>
-    <header id="navbar">
-      <div class="container-header">
-        <h2 id="logo"><a href="#main">Portfólio</a></h2>
+  <!-- Glide.js -->
+  <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+  <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+  <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
 
-        <nav id="navbar-list">
-          <button id="btn-mobile"><span id="hamburger"></span></button>
+  <!-- Estilos do site -->
+  <link rel="stylesheet" href="/assets/css/Styles.css">
+  <link rel="icon" href="/assets/img/favIcon.png">
 
-          <ul id="menu">
-            <li><a href="#about-section" class="nav__link">Sobre</a></li>
-            <li><a href="#services-section" class="nav__link">Serviços</a></li>
-            <li><a href="#jobs-section" class="nav__link">Projetos</a></li>
-            <li><a href="#skills-section" class="nav__link">Habilidades</a></li>
-            <li><a href="#contact-section" class="nav__link">Contato</a></li>
-          </ul>
-        </nav>
+  <!-- Biblioteca Animação Seções -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+  <header id="navbar">
+    <div class="container-header">
+      <a href="#main" id="logo">Portfólio</a>
+
+      <nav id="navbar-list">
+        <button id="btn-mobile"><span id="hamburger"></span></button>
+
+        <ul id="menu">
+          <li><a href="#about-section" class="nav__link animation-um">Quem sou eu</a></li>
+          <li><a href="#jobs-section" class="nav__link animation-dois">Projetos</a></li>
+          <li><a href="#skills-section" class="nav__link animation-tres">Conhecimentos</a></li>
+          <li><a href="#contact-section" class="nav__link animation-quatro">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!--Fim do Header-->
+
+  <main id="main">
+    <!--Conteúdo Principal-->
+    <section class="container-principal">
+      <div class="container-banner">
+        <div id="banner-info">
+          <div class="typewriter">
+            <h1 id="text">Olá, eu sou Luiz Eduardo.</h1>
+          </div>
+          <span>Front-end Developer and Academic in Computer Science</span>
+          <a href="/curriculo.pdf" rel="noopener" download="Currículo - Luiz Eduardo" class="download">
+            <i class="fa-solid fa-download"></i>
+            <span>Download CV</span>
+          </a>
+        </div>
+
+        <div class="social-medias">
+          <a href="https://www.instagram.com/luizz_edduardoo_/" class="animation-one">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/luiz-eeduardoo/" class="animation-tho">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/luizeduardodev" class="animation-tree">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
       </div>
-    </header><!--Fim do Header-->
+    </section>
+    <!--Fim da section Banner-->
 
-    <main id="main"><!--Conteúdo Principal-->
-      <div class="container-principal">
-        <div class="container-banner">
-          <div id="banner-info">
-            <span>Olá, eu sou o</span>
-            <h1>Luiz Eduardo</h1>
-            <span>Desenvolvedor Front-End.</span>
-            <a href="https://github.com/luizeduardodev">
-              <i class="fab fa-github"></i>
-              <span>GitHub</span>
-            </a>
+    <section id="about-section">
+      <div class="container-about">
+        <h2 data-aos="fade-down-right" data-aos-duration="2000">Quem sou eu</h2>
+        <div class="conteudo">
+          <div class="img" data-aos="fade-up" data-aos-duration="2000">
+            <img src="/assets/img/minha-imagem.png" alt="Imagem do desenvolvedor" title="Imagem do desenvolvedor">
           </div>
-          <img src="/assets/img/Programming-amico.svg" alt="imagem do banner" title="Imagem do Banner" id="image-banner">
-        </div>
-      </div><!--Fim do Banner-->
-
-      <section id="about-section">
-        <div class="container-about">
-          <h2 data-anime="left">Sobre o desenvolvedor</h2>
-          <div data-anime="left" class="conteudo">
-            <div class="img">
-              <img src="./assets/img/Imagem-sobre.png" alt="Imagem da section sobre">
-            </div>
-            <div class="textos">
-              <div class="p">
-                <p>Olá, meu nome é Luiz Eduardo, tenho 21 anos e sou estudante de Ciência da Computação.</p>
-                <p>Em paralelo com a faculdade, estou estudando desenvolvimento web com foco no Front-end.</p>
-                <p>Tenho habilidade com Html5, Css3, Javascript(estudando), lógica de programação, Git e GitHub, Mysql, além de estar disposto a aprender novas tecnologias e ferramentas.</p>
-                <p>Atualmente estou me aprofundando em Javascript para então partir para uma biblioteca ou framework.</p> 
-              </div>
-
-              <div class="links-social-cvv">
-                <a href="https://www.linkedin.com/in/luiz-eeduardoo/">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" class="iconify" data-inline="false" data-icon="akar-icons:linkedin-fill" style="transform: rotate(360deg);"><g fill="none">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1 2.838A1.838 1.838 0 0 1 2.838 1H21.16A1.837 1.837 0 0 1 23 2.838V21.16A1.838 1.838 0 0 1 21.161 23H2.838A1.838 1.838 0 0 1 1 21.161V2.838zm8.708 6.55h2.979v1.496c.43-.86 1.53-1.634 3.183-1.634c3.169 0 3.92 1.713 3.92 4.856v5.822h-3.207v-5.106c0-1.79-.43-2.8-1.522-2.8c-1.515 0-2.145 1.089-2.145 2.8v5.106H9.708V9.388zm-5.5 10.403h3.208V9.25H4.208v10.54zM7.875 5.812a2.063 2.063 0 1 1-4.125 0a2.063 2.063 0 0 1 4.125 0z" fill="currentColor">
-                    </path></g>
-                  </svg>
-                  <span>Linkedin</span>
-                </a>
-                <a href="/curriculo.pdf" rel="noopener" download="Currículo - Luiz Eduardo">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" class="iconify" data-inline="false" data-icon="ri:download-cloud-fill" style="transform: rotate(360deg);">
-                    <path d="M7 20.981a6.5 6.5 0 0 1-2.936-12a8.001 8.001 0 0 1 15.872 0a6.5 6.5 0 0 1-2.936 12V21H7v-.019zM13 12V8h-2v4H8l4 5l4-5h-3z" fill="currentColor">
-                    </path>
-                  </svg>
-                  <span>Currículo</span>
-                </a>
-              </div>
+          <div class="textos">
+            <div class="p" data-aos="fade-right" data-aos-duration="2000">
+              <p>Sou Luiz Eduardo, tenho 21 anos e moro em Petrolina-PE.</p>
+              <p>Desenvolvedor Front-end e acadêmico em Ciência da Computação, fascinado por tecnologia.</p>
             </div>
           </div>
         </div>
-      </section><!--Fim da Section about-->
+      </div>
+    </section>
+    <!--Fim da Section about-->
 
-      <section id="services-section">
-        <div class="container-services">
-          <h2 data-anime="right">Meus serviços</h2>
-          <div class="container" data-anime="right">
-            <div class="services-container">
-              <img src="/assets/img/desenvolvimento-web.png" alt="Imagem do card desenvolvimento" title="Imagem do card desenvolvimento">
-              <h3>Criação de Sites</h3>
-              <p>Desenvolvimento de sites institucionais, pessoais e landing pages.</p>
+    <section id="jobs-section">
+      <div class="container-jobs">
+        <h2 data-aos="fade-up-right" data-aos-duration="2000">Projetos</h2>
+        <div class="container-slides">
+
+          <div class="glide" data-aos="fade-down" data-aos-duration="2000">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                  <h3>Página de Links</h3>
+                  <span>Página com links para biografia do instagram</span>
+                  <div class="container-tecnologies">
+                    <span>Tecnológias:</span>
+                    <span><i class="fa-brands fa-html5"></i></span>
+                    <span><i class="fa-brands fa-css3-alt"></i></span>
+                    <span><i class="fa-brands fa-js"></i></span>
+                  </div>
+                  <a href="https://linkss.netlify.app/" target="_blank"><i class="fas fa-link"></i>Visite o site</a>
+                </li>
+                <li class="glide__slide">
+                  <h3>Calcule o seu IMC</h3>
+                  <span>Descubra qual é o seu IMC de forma rápida e sem enrolação!</span>
+                  <div class="container-tecnologies">
+                    <span>Tecnológias:</span>
+                    <span><i class="fa-brands fa-html5"></i></span>
+                    <span><i class="fa-brands fa-css3-alt"></i></span>
+                    <span><i class="fa-brands fa-js"></i></span>
+                  </div>
+                  <a href="https://calculadoradeimc.netlify.app/" target="_blank"><i class="fas fa-link"></i>Visite o site</a>
+                </li>
+                <li class="glide__slide">
+                  <h3>Meu Portfólio</h3>
+                  <span>Portfólio criado para mostrar os meus projetos e habilidades</span>
+                  <div class="container-tecnologies">
+                    <span>Tecnológias:</span>
+                    <span><i class="fa-brands fa-html5"></i></span>
+                    <span><i class="fa-brands fa-css3-alt"></i></span>
+                    <span><i class="fa-brands fa-js"></i></span>
+                  </div>
+                  <a href="https://luizeduardodev.netlify.app/" target="_blank"><i class="fas fa-link"></i>Visite o site</a>
+                </li>
+                <li class="glide__slide">
+                  <h3>Hotel Paraíso</h3>
+                  <span>Projeto de um site fictício para um hotel</span>
+                  <div class="container-tecnologies">
+                    <span>Tecnológias:</span>
+                    <span><i class="fa-brands fa-html5"></i></span>
+                    <span><i class="fa-brands fa-css3-alt"></i></span>
+                    <span><i class="fa-brands fa-js"></i></span>
+                  </div>
+                  <a href="https://hotelparaisoo.netlify.app/" target="_blank"><i class="fas fa-link"></i>Visite o site</a>
+                </li>
+                <li class="glide__slide">
+                  <h3>Template Loja Virtual</h3>
+                  <span>Projeto desenvolvido para uma vaga de estágio</span>
+                  <div class="container-tecnologies">
+                    <span>Tecnológias:</span>
+                    <span><i class="fa-brands fa-html5"></i></span>
+                    <span><i class="fa-brands fa-css3-alt"></i></span>
+                    <span><i class="fa-brands fa-js"></i></span>
+                    <span><i class="fa-brands fa-bootstrap"></i></span>
+                  </div>
+                  <a href="https://loja-estagio.netlify.app/" target="_blank"><i class="fas fa-link"></i>Visite o site</a>
+                </li>
+                <li class="glide__slide">
+                  <h3>Tela de Login e Register</h3>
+                  <span>Painel de Login e Register para aplicações web</span>
+                  <div class="container-tecnologies">
+                    <span>Tecnológias:</span>
+                    <span><i class="fa-brands fa-html5"></i></span>
+                    <span><i class="fa-brands fa-css3-alt"></i></span>
+                    <span><i class="fa-brands fa-js"></i></span>
+                  </div>
+                  <a href="https://painel-login.netlify.app/" target="_blank"><i class="fas fa-link"></i>Visite o site</a>
+                </li>
+                <li class="glide__slide">
+                  <h3>Advinhe qual é o animal(Game Simples)</h3>
+                  <span>Jogo online desenvolvido para testar o meu conhecimento em javascript</span>
+                  <div class="container-tecnologies">
+                    <span>Tecnológias:</span>
+                    <span><i class="fa-brands fa-html5"></i></span>
+                    <span><i class="fa-brands fa-css3-alt"></i></span>
+                    <span><i class="fa-brands fa-js"></i></span>
+                  </div>
+                  <a href="https://descubraoanimal.netlify.app/" target="_blank"><i class="fas fa-link"></i>Visite o site</a>
+                </li>
+              </ul>
             </div>
-            <div class="services-container">
-              <img src="/assets/img/manutencao-na-web.png" alt="Imagem do card Manutenção" title="Imagem do card Manutenção">
-              <h3>Manutenção</h3>
-              <p>Realizo a manutenção ou atualização do Front-end do seu site, caso queira modificar, adicionar, remover ou melhorar algo.</p>
-            </div>
-            <div class="services-container">
-              <img src="/assets/img/design-responsivo.png" alt="Imagem do card Responsividade" title="Imagem do card Responsividade">
-              <h3>Responsividade</h3>
-              <p>Deixo o seu site responsivo, ou seja, adaptado para ser visualizado tanto em desktop quanto em dispositivos móveis.</p>
+
+            <div class="glide__arrows" data-glide-el="controls">
+              <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                &lt;
+              </button>
+
+              <button class="glide__arrow glide__arrow--right" data-glide-dir=">">></button>
             </div>
           </div>
-        </div>
-      </section><!-- Fim da Section services -->
 
-      <section id="jobs-section">
-        <div class="container-jobs">
-          <h2 data-anime="top">Projetos</h2>
-          <div class="projetos" data-anime="top">
-            <div class="card">
-              <h3>Página de Links</h3>
-              <p>Página com links para biografia do instagram</p>
-              <a href="https://linkss.netlify.app/" target="_blank"><i class="fas fa-link"></i>Visite o site</a>
-              <div class="container-span">
-                <span>Html5</span>
-                <span>Css3</span>
-                <span>Javascript</span>
-              </div>
-            </div>
-            <div class="card">
-              <h3>Calcule o seu IMC</h3>
-              <p>Descubra qual é o seu IMC de forma rápida e sem enrolação!</p>
-              <a href="https://calculadoradeimc.netlify.app/" target="_blank"><i class="fas fa-link"></i>Visite o site</a>
-              <div class="container-span">
-                <span>Html5</span>
-                <span>Css3</span>
-                <span>Javascript</span>
-              </div>
-            </div>
-            <div class="card">
-              <h3>Portfólio | Luiz Eduardo</h3>
-              <p>Portfólio criado para mostrar os meus projetos e habilidades</p>
-              <a href="https://luizeduardodev.netlify.app/" target="_blank"><i class="fas fa-link"></i>Visite o site</a>
-              <div class="container-span">
-                <span>Html5</span>
-                <span>Css3</span>
-                <span>Javascript</span>
-              </div>
-            </div>
-            <div class="card">
-              <h3 target="_blank">Website Hotel Paraíso</h3>
-              <p>Projeto de um site fictício para um hotel</p>
-              <a href="https://hotelparaisoo.netlify.app/" target="_blank"><i class="fas fa-link"></i>Visite o site</a>
-              <div class="container-span">
-                <span>Html5</span>
-                <span>Css3</span>
-                <span>Javascript</span>
-              </div>
-            </div>
-            <div class="card">
-              <h3>Projeto de uma Loja Virtual</h3>
-              <p>Projeto desenvolvido para uma vaga de estágio</p>
-              <a href="https://loja-estagio.netlify.app/" target="_blank"><i class="fas fa-link"></i>Visite o site</a>
-              <div class="container-span">
-                <span>Html5</span>
-                <span>Css3</span>
-                <span>Javascript</span>
-                <span>Bootstrap</span>
-              </div>
-            </div>
-            <div class="card">
-              <h3>Tela de Log-in e Sign-up</h3>
-              <p>Painel de Log-in e Sign-up para aplicações web</p>
-              <a href="https://painel-login.netlify.app/" target="_blank"><i class="fas fa-link"></i>Visite o site</a>
-              <div class="container-span">
-                <span>Html5</span>
-                <span>Css3</span>
-                <span>Javascript</span>
-              </div>
-            </div>
-            <div class="card">
-              <h3>Advinhe qual é o animal(em fase de desenvolvimento)</h3>
-              <p>Jogo online desenvolvido para testar o meu conhecimento em javascript</p>
-              <a href="https://game-random-images.netlify.app/" target="_blank"><i class="fas fa-link"></i>Visite o site</a>
-              <div class="container-span">
-                <span>Html5</span>
-                <span>Css3</span>
-                <span>Javascript</span>
-              </div>
-            </div>
+        </div>
+
+        <a href="https://github.com/luizeduardodev?tab=repositories" class="link-github" data-aos="fade-up" data-aos-duration="2000">Repositórios no GitHub</a>
+      </div>
+    </section><!-- Fim da Section Jobs -->
+
+    <section id="skills-section">
+      <div class="container-skills">
+        <h2 data-aos="fade-up" data-aos-duration="2000">Conhecimentos</h2>
+        <div class="container-cards" data-aos="fade-down-right" data-aos-duration="2000">
+          <div class="card">
+            <i class="fab fa-html5"></i>
+            <span>HTML</span>
           </div>
-          <a href="https://github.com/luizeduardodev?tab=repositories">Repositórios no GitHub</a>
-        </div>
-      </section><!-- Fim da Section Jobs -->
-
-      <section id="skills-section">
-        <div class="container-skills">
-          <h2>Habilidades</h2>
-          <div class="container-cards">
-            <div class="card">
-              <i class="fab fa-html5"></i>
-              <span>HTML</span>
-            </div>
-            <div class="card">
-              <i class="fab fa-css3-alt"></i>
-              <span>CSS</span>
-            </div>
-            <div class="card">
-              <i class="fab fa-js-square"></i>
-              <span>Javascript</span>
-            </div>
-            <div class="card">
-              <i class="fab fa-git-alt"></i>
-              <span>Git</span>
-            </div>
-            <div class="card">
-              <i class="fab fa-github-square"></i>
-              <span>GitHub</span>
-            </div>
+          <div class="card">
+            <i class="fab fa-css3-alt"></i>
+            <span>CSS</span>
+          </div>
+          <div class="card">
+            <i class="fab fa-js-square"></i>
+            <span>Javascript</span>
+          </div>
+          <div class="card">
+            <i class="fa-brands fa-sass"></i>
+            <span>Sass</span>
+          </div>
+          <div class="card">
+            <i class="fab fa-git-alt"></i>
+            <span>Git</span>
           </div>
         </div>
-      </section><!--Fim da section skills-->
-    </main><!--Fim do Main-->
+      </div>
+    </section>
+    <!--Fim da section skills-->
+  </main>
+  <!--Fim do Main-->
 
-    <footer id="contact-section">
-      <div class="container-contact">
-        <h2>Me mande uma mensagem</h2>
-        <p>Caso queira falar sobre algum projeto ou me contratar para algum serviço.</p>
+  <footer id="contact-section">
+    <div class="container-contact">
+      <h2 data-aos="fade-up" data-aos-duration="2000">Contato</h2>
+      <div class="container-form" data-aos="fade-down" data-aos-duration="2000">
+        <ul class="container-contact-2">
+          <li class="contact-forms" data-aos="fade-right" data-aos-duration="2000">
+            <i class="fa-solid fa-envelope"></i>
+            <span>luizeduardorodrigues807@gmail.com</span>
+          </li>
+          <li class="contact-forms" data-aos="fade-right" data-aos-duration="2000">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Petrolina, Brasil</span>
+          </li>
+        </ul>
 
         <form method="POST" action="https://formsubmit.co/luizeduardorodrigues807@gmail.com">
-          <input type="text" name="name" required placeholder="Digite o seu nome">
-          <input type="email" name="email" required placeholder="Digite o seu Email">
+          <div class="grid1 input" data-aos="fade-down" data-aos-duration="2000">
+            <label for="nome">Seu nome</label>
+            <input type="text" name="name" required id="nome">
+          </div>
+          <div class="grid2 input" data-aos="fade-right" data-aos-duration="2000">
+            <label for="email">Seu Email</label>
+            <input type="email" name="email" required title="Formato: xxxxxx@gmail.com" id="email">
+          </div>
+          <div class="grid3 input input-assunto" data-aos="fade-up" data-aos-duration="2000">
+            <label for="assunto">Seu assunto</label>
+            <input type="text" name="assunto" required id="assunto">
+          </div>
+          <div class="grid4 input" data-aos="fade-up" data-aos-duration="2000">
+            <label for="mensagem">Mensagem</label>
+            <textarea name="textarea" required id="mensagem"></textarea>
+          </div>
+
+          <input class="btn-enviar" type="submit" name="btn-cadastrar" value="Enviar">
 
           <input type="hidden" name="_autoresponse" value="Obrigado por entrar em contato! Responderei o mais rápido possível :)">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_subject" value="Email do meu Portfólio">
-
-          <textarea name="assunto" placeholder="Escreva o conteúdo" required></textarea>
-          <button type="submit">Enviar mensagem</button>
         </form>
       </div>
-    </footer><!--Fim do footer-->
-
-    <footer id="contact-section-copyrigth">
-      <p>®Todos os direitos reservados - Luiz Eduardo | Desenvolvedor Front-end</p>
-      <p>Icones feitos por <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a></p>
-      <a href="https://br.freepik.com/vetores/tecnologia">Tecnologia vetor criado por stories - br.freepik.com</a>
-    </footer><!--Fim do footer 2-->
-
-    <div id="preloader">
-      <div class="inner">
-        <div class="bolas">
-          <div></div>
-          <div></div>
-          <div></div>                    
-       </div>
-      </div>
     </div>
-    <!--Fim Preloader-->
+  </footer>
+  <!--Fim do footer-->
 
-    <!--- Scripts js --->
-    <script src="/assets/js/index.js"></script>
-  </body>
+  <footer id="contact-section-copyrigth">
+    <span>© 2022 Luiz Eduardo All rights reserved</span>
+    <p>Icones de <a href="https://www.freepik.com" title="Freepik" target="_blank">Freepik</a> from <a href="https://www.flaticon.com/br/" title="Flaticon" target="_blank">www.flaticon.com</a></p>
+    <p>Créditos do vetor utilizado: <a href="https://br.freepik.com/vetores/tecnologia" target="_blank">freepik.com</a></p>
+    <p>Créditos dos icones utilizados: <a href="https://www.flaticon.com/br/autores/iconixar" title="iconixar" target="_blank">iconixar</a> from <a href="https://www.flaticon.com/br/" title="Flaticon" target="_blank">www.flaticon.com</a></p>
+    <a href="https://www.flaticon.com/br/icones-gratis/codigo" title="código ícones">Código ícones criados por Icongeek26 - Flaticon</a>
+  </footer>
+  <!--Fim do footer 2-->
+
+  <!--Scripts js-->
+  <script src="/assets/js/index.js"></script>
+  <script src="/assets/js/scrollSuave.js"></script>
+  
+  <!-- Biblioteca Animações das seções -->
+  <script>
+    AOS.init();
+  </script>
+
+  <script>
+    const config = {
+      type: 'carousel',
+      perView: 3,
+      breakpoints: {
+        768: {
+          perView: 1
+        },
+        425: {
+          perView: 1
+        }
+      }
+    };
+
+    new Glide('.glide', config).mount();
+  </script>
+
+  <script>
+    let i = 0;
+    let tag = document.getElementById("text");
+    let html = document.getElementById("text").innerHTML;
+    let attr = tag.setAttribute("data", html);
+    let txt = tag.getAttribute("data");
+    let speed = 170;
+
+    const typeWriter = () => {
+      if(i <= txt.length){
+        document.getElementById("text").innerHTML = txt.slice(0, i+1);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+    typeWriter();
+  </script>
+</body>
+
 </html>

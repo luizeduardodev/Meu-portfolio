@@ -1,11 +1,18 @@
 /* Função para alterar o menu fixo */
 window.addEventListener("scroll", () => {
     const navbar = document.getElementById("navbar");
+    const menu = document.getElementById("menu");
 
     if(scrollY >= 40){
         navbar.style.padding = "10px";
+        navbar.style.backgroundColor = "#000746";
+        navbar.style.borderBottom = "1px solid black";
+        menu.style.top = "52px";
     }else{
         navbar.style.padding = "15px";
+        navbar.style.backgroundColor = "transparent";
+        navbar.style.borderBottom = "none";
+        menu.style.top = "62px";
     }
 });
 
@@ -20,6 +27,7 @@ BtnMobile.addEventListener("click", () => {
 //Função para fechar o menu assim que clicar em um link do menu ou fora dele;
 const navLink = document.querySelectorAll(".nav__link");
 const clicarFora = document.getElementById("main");
+const logoFora = document.getElementById("logo");
 
 const removeMenu = () => {
     nav.classList.remove("active");
@@ -27,6 +35,7 @@ const removeMenu = () => {
 
 navLink.forEach(n => n.addEventListener("click", removeMenu));
 clicarFora.addEventListener("click", removeMenu);
+logoFora.addEventListener("click", removeMenu);
 
 //Preloader;
 $(window).on('load', function(){
@@ -73,5 +82,5 @@ animeScroll();
 if(target.length){
     window.addEventListener('scroll', debounce(function(){
         animeScroll();
-    }, 100));
+    }, 150));
 }
