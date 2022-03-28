@@ -428,18 +428,17 @@ body::-webkit-scrollbar-thumb{
 }
 #jobs-section .container-jobs .glide .glide__track .glide__slides .glide__slide{
     position: relative;
-    height: 300px;
+    height: 460px;
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 1.5rem;
-    padding: 3px;
+    gap: 0.3rem;
+    padding: 5px;
     border-radius: 2px;
     background: linear-gradient(0, #001aff, #000000);
     border: 2px solid #000957;
     transition: .3s ease-in-out;
-    text-align: center;
 }
 #jobs-section .container-jobs .glide .glide__track .glide__slides .glide__slide::before{
     content: '';
@@ -451,31 +450,38 @@ body::-webkit-scrollbar-thumb{
     background-color: rgba(0, 0, 0, 0.8);
 }
 #jobs-section .container-jobs .glide .glide__track .glide__slides .glide__slide h3{
+    width: 100%;
     position: relative;
     color: white;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    text-align: center;
 }
-#jobs-section .container-jobs .glide .glide__track .glide__slides .glide__slide span{
+#jobs-section .container-jobs .glide .glide__track .glide__slides .glide__slide img{
+    position: relative;
+    width: 478px;
+}
+#jobs-section .container-jobs .glide .glide__track .glide__slides .glide__slide .description{
+    width: 100%;
     position: relative;
     color: white;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
 }
 #jobs-section .container-jobs .glide .glide__track .glide__slides .glide__slide .container-tecnologies{
+    position: relative;
     width: 100%;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
     gap: 1rem;
+    margin-bottom: 5px;
 }
 #jobs-section .container-jobs .glide .glide__track .glide__slides .glide__slide .container-tecnologies span{
-    border-radius: 2px;
     color: white;
     font-size: 1.1rem;
 }
 #jobs-section .container-jobs .glide .glide__track .glide__slides .glide__slide .container-tecnologies span i{
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 #jobs-section .container-jobs .glide .glide__track .glide__slides .glide__slide a{
     position: relative;
@@ -495,6 +501,21 @@ body::-webkit-scrollbar-thumb{
 #jobs-section .container-jobs .glide .glide__track .glide__slides .glide__slide a:hover{
     transform: translateY(-3px);
 }
+.glide__arrow{
+    color: #000;
+    padding: 10px 15px;
+    border: 2px solid rgba(58, 58, 58, 0.5);
+    border-radius: 2px;
+    box-shadow: 0 0.25rem 0.5rem 0 rgb(0 0 0 / 20%);
+    font-size: 1.3rem;
+}
+.glide__arrow--left{
+    left: -4rem;
+}
+.glide__arrow--right{
+    right: -4rem;
+}
+
 /* skills section */
 #skills-section{
     padding: 100px 0px;
@@ -873,20 +894,15 @@ body::-webkit-scrollbar-thumb{
         align-items: center;
     }
     #jobs-section .container-jobs .glide{
-        width: 80%;
-    }
-    #jobs-section .container-jobs .glide .glide__track .glide__slides .glide__slide{
-        align-items: center;
+        width: 65%;
     }
     #jobs-section .container-jobs .glide .glide__track .glide__slides .glide__slide h3{
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
-    #jobs-section .container-jobs .glide .glide__track .glide__slides .glide__slide a{
-        width: 25%;
+    #jobs-section .container-jobs .glide .glide__track .glide__slides .glide__slide .description{
+        font-size: 1.1rem;
     }
-    #jobs-section .container-jobs .glide .glide__track .glide__slides .glide__slide .container-span{
-        justify-content: center;
-    }
+
     /* skills section */
     #skills-section .container-skills{
         width: 95%;
@@ -1028,26 +1044,38 @@ body::-webkit-scrollbar-thumb{
     #jobs-section .container-jobs .glide{
         width: 95%;
     }   
-    #jobs-section .container-jobs .glide .glide__track .glide__slides .glide__slide h3{
-        font-size: 1.2rem;
+    #jobs-section .container-jobs .glide .glide__track .glide__slides .glide__slide{
+        height: 400px;
     }
-    #jobs-section .container-jobs .glide .glide__track .glide__slides .glide__slide a{
-        width: 37%;
-        padding: 7px;
+    #jobs-section .container-jobs .glide .glide__track .glide__slides .glide__slide h3{
+        font-size: 1.1rem;
+    }
+    #jobs-section .container-jobs .glide .glide__track .glide__slides .glide__slide .description{
+        font-size: 1rem;
+    }
+    #jobs-section .container-jobs .glide .glide__track .glide__slides .glide__slide .container-tecnologies span{
+        font-size: 1rem;
+    }
+    #jobs-section .container-jobs .glide .glide__track .glide__slides .glide__slide .container-tecnologies span i{
+        font-size: 1.5rem;
+    }
+    .glide__arrow{
+        top: 90%;
+        color: #fff;
     }
     .glide__arrow--left{
         display: flex;
         justify-content: center;
         align-items: center;
-        left: 2em;
+        left: 2rem;
         width: 5%;
         height: 8%;
     }
     .glide__arrow--right{
-        right: 2em;
         display: flex;
         justify-content: center;
         align-items: center;
+        right: 2rem;
         width: 5%;
         height: 8%;
     }
@@ -1087,10 +1115,8 @@ body::-webkit-scrollbar-thumb{
     }
     /* Contact Section Copyrigth */
     #contact-section-copyrigth{
+        width: 100%;
         text-align: center;
-    }
-    #contact-section-copyrigth span{
-        /* font-size: 1rem; */
     }
     #contact-section-copyrigth a{
         font-size: 0.9rem;
@@ -1151,20 +1177,23 @@ body::-webkit-scrollbar-thumb{
     #jobs-section .container-jobs h2{
         font-size: 1.2rem;
     }
-    #jobs-section .container-jobs .glide .glide__track .glide__slides .glide__slide h3{
-        font-size: 1.1rem;
+    #jobs-section .container-jobs .glide .glide__track .glide__slides .glide__slide{
+        height: 360px;
     }
-    #jobs-section .container-jobs .glide .glide__track .glide__slides .glide__slide span{
+    #jobs-section .container-jobs .glide .glide__track .glide__slides .glide__slide h3{
+        font-size: 1rem;
+    }
+    #jobs-section .container-jobs .glide .glide__track .glide__slides .glide__slide .description{
         font-size: 0.9rem;
     }
     #jobs-section .container-jobs .glide .glide__track .glide__slides .glide__slide .container-tecnologies span{
         font-size: 0.9rem;
     }
     #jobs-section .container-jobs .glide .glide__track .glide__slides .glide__slide .container-tecnologies span i{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     #jobs-section .container-jobs .glide .glide__track .glide__slides .glide__slide a{
-        width: 45%;
+        /* width: 45%; */
         padding: 6px;
     }
     #jobs-section .container-jobs .link-github{
@@ -1197,6 +1226,7 @@ body::-webkit-scrollbar-thumb{
     #contact-section .container-contact .container-form form .btn-enviar{
         padding: 6px;
     }
+
     #contact-section-copyrigth span{
         font-size: 1rem;
     }
@@ -1259,18 +1289,18 @@ body::-webkit-scrollbar-thumb{
     #jobs-section .container-jobs h2{
         font-size: 1.1rem;
     }
-    #jobs-section .container-jobs .glide .glide__track .glide__slides .glide__slide {
-        height: 250px;
+    #jobs-section .container-jobs .glide .glide__track .glide__slides .glide__slide{
+        height: 320px;
     }
     #jobs-section .container-jobs .glide .glide__track .glide__slides .glide__slide h3{
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     #jobs-section .container-jobs .glide .glide__track .glide__slides .glide__slide .container-tecnologies span i{
         font-size: 1.3rem;
     }
     #jobs-section .container-jobs .glide .glide__track .glide__slides .glide__slide a{
-        width: 48%;
         padding: 5px;
+        font-size: 0.9rem;
     }
     /* skills section */
     #skills-section .container-skills h2{
