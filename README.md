@@ -1,4 +1,4 @@
-<h1 style="text-align: center;">😍 Meu Portfólio</h1>
+<h1 align=center>😍 Meu Portfólio</h1>
 
 <p text-align="center">Meu portfólio desenvolvido com HTML5, CSS3, Javascript e algumas bibliotecas</p>
 
@@ -11,6 +11,6 @@
 ## 🚀 Tecnologias
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- Html5
-- Css3
+- HTML
+- CSS
 - Javascript
