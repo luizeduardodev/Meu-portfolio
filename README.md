@@ -1,4 +1,4 @@
-<h1 style="text-align= center">😍 Meu Portfólio</h1>
+<h1 style="text-align: center;">😍 Meu Portfólio</h1>
 
 <p text-align="center">Meu portfólio desenvolvido com HTML5, CSS3, Javascript e algumas bibliotecas</p>
 
