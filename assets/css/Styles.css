@@ -620,6 +620,12 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
 }
 
+#skills-section .container-skills .information {
+    width: 100%;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
 #skills-section .container-skills h2 {
     font-size: 1.5rem;
     font-weight: bold;
@@ -644,9 +650,13 @@ body::-webkit-scrollbar-thumb {
     margin-top: 30px;
 }
 
+#skills-section .container-skills .container-cards .information-one {
+    display: none;
+}
+
 #skills-section .container-skills .container-cards .card {
     width: 20%;
-    height: 170px;
+    height: 155px;
     perspective: 1000px;
     position: relative;
     display: flex;
@@ -657,7 +667,7 @@ body::-webkit-scrollbar-thumb {
     border: 2px solid #000957;
     transition: all .3s ease-in-out;
     border-radius: 2px;
-    /* padding: 10px; */
+    padding: 0 5px;
     cursor: pointer;
 }
 
@@ -701,10 +711,11 @@ body::-webkit-scrollbar-thumb {
     transform: translateY(-50%);
     text-align: center;
     color: white;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
-#skills-section .container-skills .container-cards .card .flipper .front, .back {
+#skills-section .container-skills .container-cards .card .flipper .front,
+.back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -1113,8 +1124,18 @@ body::-webkit-scrollbar-thumb {
         font-size: 1.4rem;
     }
 
+    #skills-section .container-skills .container-cards .information-one {
+        display: block;
+        width: 100%;
+    }
+
+    #skills-section .container-skills .information {
+        display: none;
+    }
+
     #skills-section .container-skills .container-cards .card {
         width: 48.8%;
+        height: 155px;
     }
 
     #skills-section .container-skills .container-cards .card i {
@@ -1330,12 +1351,25 @@ body::-webkit-scrollbar-thumb {
         font-size: 1.3rem;
     }
 
-    #skills-section .container-skills .container-cards .card {
-        width: 45%;
+    #skills-section .container-skills .container-cards .information-one {
+        font-size: 0.9rem;
     }
 
-    #skills-section .container-skills .container-cards .card span {
+    #skills-section .container-skills .container-cards .card {
+        width: 47%;
+        padding: 0 3px;
+    }
+
+    #skills-section .container-skills .container-cards .card .flipper i {
+        font-size: 2.3rem;
+    }
+
+    #skills-section .container-skills .container-cards .card .flipper span {
         font-size: 1rem;
+    }
+
+    #skills-section .container-skills .container-cards .card .flipper .back .span2 {
+        font-size: 0.8rem;
     }
 
     /* Contact Section */
@@ -1483,12 +1517,25 @@ body::-webkit-scrollbar-thumb {
         font-size: 1.2rem;
     }
 
-    #skills-section .container-skills .container-cards .card {
-        width: 44%;
+    #skills-section .container-skills .container-cards .information-one {
+        font-size: 0.8rem;
     }
 
-    #skills-section .container-skills .container-cards .card span {
+    #skills-section .container-skills .container-cards .card {
+        width: 46%;
+        height: 140px;
+    }
+
+    #skills-section .container-skills .container-cards .card .flipper i {
+        font-size: 2rem;
+    }
+
+    #skills-section .container-skills .container-cards .card .flipper span {
         font-size: 0.9rem;
+    }
+
+    #skills-section .container-skills .container-cards .card .flipper .back .span2 {
+        font-size: 0.7rem;
     }
 
     /* Contact Section */
@@ -1610,6 +1657,27 @@ body::-webkit-scrollbar-thumb {
     /* skills section */
     #skills-section .container-skills h2 {
         font-size: 1.1rem;
+    }
+
+    #skills-section .container-skills .container-cards .information-one {
+        font-size: 0.7rem;
+    }
+
+    #skills-section .container-skills .container-cards .card {
+        width: 47%;
+        height: 130px;
+    }
+
+    #skills-section .container-skills .container-cards .card .flipper i {
+        font-size: 1.8rem;
+    }
+
+    #skills-section .container-skills .container-cards .card .flipper span {
+        font-size: 0.8rem;
+    }
+
+    #skills-section .container-skills .container-cards .card .flipper .back .span2 {
+        font-size: 0.6rem;
     }
 
     /* Contact Section */
