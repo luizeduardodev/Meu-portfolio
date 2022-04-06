@@ -1,0 +1,87 @@
+@mixin container {
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+@mixin flex-center {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+@mixin flex-center-not-width {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin efeito-escuro {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+@mixin config-buttons {
+    padding: 9px;
+    border-radius: 2px;
+    background: linear-gradient(0, #000746, #000000);
+    border: 2px solid #000957;
+    transition: all 0.15s ease-in;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+@mixin line-botton {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 2px;
+    margin: 0 auto;
+    background-color: black;
+}
+
+@mixin background-config {
+    border-radius: 2px;
+    background: linear-gradient(0, #001aff, #000000);
+    border: 2px solid #000957;
+}
+
+@mixin config-flipper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+@mixin button-transparent {
+    transform: translateY(-3px);
+    background: linear-gradient(#000746, #8d8d8d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin config-input {
+    width: 90%;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    padding: 8px 8px;
+    outline: none;
+    border: none;
+    transition: all 0.15s ease-in-out;
+    font-size: 0.9rem;
+}
+
+// Media querry;
+@mixin md($widht: 0) {
+    @media screen and (max-width: $widht) {
+        @content;
+    }
+}

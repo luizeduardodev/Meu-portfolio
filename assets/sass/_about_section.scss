@@ -1,0 +1,187 @@
+@use "mixins";
+
+/* About section */
+#about-section {
+    padding: 100px 0px;
+    border-bottom: 2px solid #000746;
+
+    .container-about {
+        @include mixins.container;
+        flex-direction: column;
+
+        @include mixins.md(768px) {
+            width: 95%;
+        }
+
+        h2 {
+            @include mixins.md(768px) {
+                font-size: 1.4rem;
+            }
+
+            @include mixins.md(425px) {
+                font-size: 1.3rem;
+            }
+
+            @include mixins.md(375px) {
+                font-size: 1.2rem;
+            }
+
+            @include mixins.md(320px) {
+                font-size: 1.1rem;
+            }
+
+            font-size: 1.5rem;
+            font-weight: bold;
+
+            &::before {
+                @include mixins.md(768px) {
+                    font-size: 1.4rem;
+                    right: 145px;
+                    top: 1px;
+                }
+
+                @include mixins.md(425px) {
+                    font-size: 1.3rem;
+                    right: 135px;
+                    top: 1px;
+                }
+
+                @include mixins.md(375px) {
+                    font-size: 1.2rem;
+                    right: 130px;
+                    top: 1px;
+                }
+
+                @include mixins.md(320px) {
+                    font-size: 1.1rem;
+                    right: 120px;
+                    top: 1px;
+                }
+
+                content: '</';
+                font-size: 1.5rem;
+                position: absolute;
+                right: 158px;
+                top: -1px;
+                animation: pulse 2s infinite linear;
+            }
+
+            &::after {
+                @include mixins.md(768px) {
+                    font-size: 1.4rem;
+                    top: 1px;
+                    left: 145px;
+                }
+
+                @include mixins.md(425px) {
+                    font-size: 1.3rem;
+                    left: 135px;
+                    top: 1px;
+                }
+
+                @include mixins.md(375px) {
+                    font-size: 1.2rem;
+                    left: 130px;
+                    top: 1px;
+                }
+
+                @include mixins.md(320px) {
+                    font-size: 1.1rem;
+                    left: 120px;
+                    top: 1px;
+                }
+
+                content: '>';
+                position: absolute;
+                font-size: 1.5rem;
+                left: 160px;
+                animation: pulse 2s infinite linear;
+            }
+        }
+
+        .conteudo {
+            @include mixins.md(768px) {
+                flex-direction: column;
+                padding: 20px 30px;
+                gap: 1rem;
+            }
+
+            @include mixins.md(425px) {
+                width: 95%;
+                padding: 30px 10px;
+            }
+
+            @include mixins.md(375px) {
+                padding: 40px 10px;
+            }
+
+            @include mixins.flex-center;
+            @include mixins.background-config;
+            position: relative;
+            margin-top: 30px;
+            padding: 20px;
+            transition: .3s;
+
+            &::before {
+                @include mixins.efeito-escuro;
+            }
+
+            img {
+                @include mixins.md(768px) {
+                    width: 150px;
+                }
+
+                @include mixins.md(425px) {
+                    width: 140px;
+                }
+
+                @include mixins.md(375px) {
+                    width: 130px;
+                }
+
+                @include mixins.md(320px) {
+                    width: 120px;
+                }
+
+                width: 65%;
+                position: relative;
+                border-radius: 50px;
+            }
+
+            .textos {
+                @include mixins.md(768px) {
+                    text-align: center;
+                    max-width: 600px;
+                }
+
+                @include mixins.md(425px) {
+                    max-width: 500px;
+                }
+
+                @include mixins.md(320px) {
+                    max-width: 250px;
+                }
+
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                color: white;
+
+                .p {
+                    p {
+                        @include mixins.md(768px) {
+                            font-size: 1rem;
+                        }
+
+                        @include mixins.md(375px) {
+                            font-size: 0.9rem;
+                        }
+
+                        font-size: 1.1rem;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

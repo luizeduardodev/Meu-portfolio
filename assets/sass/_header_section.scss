@@ -1,0 +1,166 @@
+@use "animations";
+@use "_before";
+@use "mixins";
+
+/* Header */
+#navbar {
+    width: 100%;
+    position: fixed;
+    padding: 15px;
+    z-index: 1000;
+    transition: .3s;
+    background-color: transparent;
+
+    .container-header {
+        @include mixins.container;
+        justify-content: space-between;
+
+        @include mixins.md(768px) {
+            width: 95%;
+        }
+
+        #logo {
+            @include mixins.md(425px) {
+                font-size: 1.3rem;
+            }
+
+            @include mixins.md(375px) {
+                font-size: 1.2rem;
+            }
+
+            @include mixins.md(320px) {
+                font-size: 1.1rem;
+            }
+
+            position: relative;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            animation: animation-header 2s ease;
+        }
+
+        #navbar-list {
+
+            @include mixins.md(768px) {
+                #hamburger {
+                    display: block;
+                    width: 20px;
+                    border-top: 2px solid;
+                    color: white;
+                }
+
+                #hamburger::after,
+                #hamburger::before {
+                    content: '';
+                    display: block;
+                    width: 20px;
+                    height: 2px;
+                    background: currentColor;
+                    margin-top: 5px;
+                    transition: .3s;
+                    position: relative;
+                }
+
+                &.active #menu {
+                    left: 0;
+                    visibility: visible;
+                }
+
+                &.active #hamburger {
+                    border-top-color: transparent;
+                }
+
+                &.active #hamburger::before {
+                    transform: rotate(135deg);
+                }
+
+                &.active #hamburger::after {
+                    transform: rotate(-135deg);
+                    top: -7px;
+                }
+            }
+
+            /* Menu mobile*/
+            #btn-mobile {
+                display: none;
+
+                @include mixins.md(768px) {
+                    display: flex;
+                    padding: .5rem 1rem;
+                    border: none;
+                    background: none;
+                    cursor: pointer;
+                    color: white;
+                }
+            }
+
+            /* Menu dektop */
+            #menu {
+                display: flex;
+                list-style: none;
+                gap: 1rem;
+
+                @include mixins.md(768px) {
+                    position: absolute;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    width: 50%;
+                    top: 62px;
+                    height: 100vh;
+                    left: -390px;
+                    z-index: 10000;
+                    overflow-y: hidden;
+                    visibility: hidden;
+                    transition: .6s;
+                    background: linear-gradient(0, #001aff, #000000);
+                }
+
+                .animation-um {
+                    animation: animation-menu-desktop 2s ease;
+                }
+
+                .animation-dois {
+                    animation: animation-menu-desktop 1.5s ease;
+                }
+
+                .animation-tres {
+                    animation: animation-menu-desktop 1s ease;
+                }
+
+                .animation-quatro {
+                    animation: animation-menu-desktop 0.5s ease;
+                }
+
+                li a {
+                    position: relative;
+                    display: block;
+                    padding: 5px 0px;
+                    font-size: 1.2rem;
+                    color: white;
+                    text-decoration: none;
+                    transition: all 0.15s ease-in-out;
+
+                    @include mixins.md(768px) {
+                        margin-bottom: 20px;
+                        font-size: 1.4rem;
+                        padding: 5px 0px;
+                    }
+
+                    @include mixins.md(425px) {
+                        font-size: 1.2rem;
+                    }
+
+                    @include mixins.md(375px) {
+                        font-size: 1.1rem;
+                    }
+
+                    @include mixins.md(320px) {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
