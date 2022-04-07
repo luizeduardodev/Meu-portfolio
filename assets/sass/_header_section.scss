@@ -1,5 +1,5 @@
 @use "animations";
-@use "_before";
+@use "before";
 @use "mixins";
 
 /* Header */
@@ -115,6 +115,18 @@
                     visibility: hidden;
                     transition: .6s;
                     background: linear-gradient(0, #001aff, #000000);
+                }
+
+                @keyframes animation-menu-desktop {
+                    from {
+                        opacity: 0;
+                        transform: translateY(-50px);
+                    }
+
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
                 }
 
                 .animation-um {

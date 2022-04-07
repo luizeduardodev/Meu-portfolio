@@ -214,6 +214,8 @@
                     transition: all 0.15s ease-in;
 
                     &:hover {
+                        transform: translateX(-10px);
+
                         @include mixins.md(425px) {
                             transform: translateY(-10px);
                         }

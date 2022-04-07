@@ -54,30 +54,6 @@ body::-webkit-scrollbar-thumb {
             transform: translateX(0);
   }
 }
-@-webkit-keyframes animation-menu-desktop {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-@keyframes animation-menu-desktop {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
 @-webkit-keyframes down {
   from {
     opacity: 0;
@@ -210,6 +186,18 @@ body::-webkit-scrollbar-thumb {
   }
   100% {
     opacity: 0;
+  }
+}
+@-webkit-keyframes animation-menu-desktop {
+  from {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 @keyframes animation-menu-desktop {
@@ -395,6 +383,18 @@ body::-webkit-scrollbar-thumb {
     transition: 0.6s;
     background: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(#001aff), to(#000000));
     background: linear-gradient(0, #001aff, #000000);
+  }
+}
+@keyframes animation-menu-desktop {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 #navbar .container-header #navbar-list #menu .animation-um {
@@ -737,6 +737,10 @@ body::-webkit-scrollbar-thumb {
   .container-principal .container-banner .social-medias a i {
     font-size: 1.2rem;
   }
+}
+.container-principal .container-banner .social-medias a i:hover {
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
 }
 @media screen and (max-width: 425px) {
   .container-principal .container-banner .social-medias a i:hover {
