@@ -9,6 +9,10 @@
         @include mixins.container;
         flex-direction: column;
 
+        @include mixins.md(1024px) {
+            width: 95%;
+        }
+
         @include mixins.md(768px) {
             width: 95%;
         }
@@ -35,27 +39,19 @@
 
             &::before {
                 @include mixins.md(768px) {
-                    font-size: 1.4rem;
-                    right: 145px;
-                    top: 1px;
+                    @include mixins.padraoBeforeAbout(1.4rem, 145px, 1px);
                 }
 
                 @include mixins.md(425px) {
-                    font-size: 1.3rem;
-                    right: 135px;
-                    top: 1px;
+                    @include mixins.padraoBeforeAbout(1.3rem, 135px, 1px);
                 }
 
                 @include mixins.md(375px) {
-                    font-size: 1.2rem;
-                    right: 130px;
-                    top: 1px;
+                    @include mixins.padraoBeforeAbout(1.2rem, 130px, 1px);
                 }
 
                 @include mixins.md(320px) {
-                    font-size: 1.1rem;
-                    right: 120px;
-                    top: 1px;
+                    @include mixins.padraoBeforeAbout(1.1rem, 120px, 1px);
                 }
 
                 content: '</';
@@ -68,27 +64,19 @@
 
             &::after {
                 @include mixins.md(768px) {
-                    font-size: 1.4rem;
-                    top: 1px;
-                    left: 145px;
+                    @include mixins.padraoAfterAbout(1.4rem, 145px, 1px);
                 }
-
+                
                 @include mixins.md(425px) {
-                    font-size: 1.3rem;
-                    left: 135px;
-                    top: 1px;
+                    @include mixins.padraoAfterAbout(1.3rem, 135px, 1px);
                 }
-
+                
                 @include mixins.md(375px) {
-                    font-size: 1.2rem;
-                    left: 130px;
-                    top: 1px;
+                    @include mixins.padraoAfterAbout(1.2rem, 130px, 1px);
                 }
-
+                
                 @include mixins.md(320px) {
-                    font-size: 1.1rem;
-                    left: 120px;
-                    top: 1px;
+                    @include mixins.padraoAfterAbout(1.1rem, 120px, 1px);
                 }
 
                 content: '>';
