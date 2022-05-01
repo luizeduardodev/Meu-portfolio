@@ -6,6 +6,10 @@
     border-bottom: 2px solid #000746;
 
     .container-skills {
+        @include mixins.md(1024px) {
+            width: 95%;
+        }
+
         @include mixins.md(768px) {
             width: 95%;
         }
