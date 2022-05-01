@@ -1,20 +1,23 @@
-/* Função para abrir o menu mobile */
 const BtnMobile = document.getElementById("btn-mobile");
-const nav = document.getElementById("navbar-list");
+const nav = document.getElementById("navbar-list"); //Menu personalizado;
+const navLink = document.querySelectorAll(".nav__link"); //ul do menu;
+const main = document.getElementById("main"); //Main da página;
+const logoo = document.getElementById("logo"); //Logo do site;
 
+/* Evento para abrir o menu mobile */
 BtnMobile.addEventListener("click", () => {
     nav.classList.toggle("active");
 });
 
-//Função para fechar o menu assim que clicar em um link do menu ou fora dele;
-const navLink = document.querySelectorAll(".nav__link");
-const clicarFora = document.getElementById("main");
-const logoFora = document.getElementById("logo");
-
+//Função para fechar o menu assim que clicar fora dele;
 const removeMenu = () => {
     nav.classList.remove("active");
 }
 
+// navLink.forEach((item) => {
+//     item.addEventListener("click", removeMenu)
+// });
+
 navLink.forEach(n => n.addEventListener("click", removeMenu));
-clicarFora.addEventListener("click", removeMenu);
-logoFora.addEventListener("click", removeMenu);
+main.addEventListener("click", removeMenu);
+logoo.addEventListener("click", removeMenu);
