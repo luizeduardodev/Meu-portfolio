@@ -85,3 +85,15 @@
         @content;
     }
 }
+
+@mixin padraoBeforeAbout($fontSize, $right, $top) {
+    font-size: $fontSize;
+    right: $right;
+    top: $top;
+}
+
+@mixin padraoAfterAbout($fontSize, $left, $top) {
+    font-size: $fontSize;
+    left: $left;
+    top: $top;
+}
