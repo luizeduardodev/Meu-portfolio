@@ -11,9 +11,19 @@
     transition: .3s;
     background-color: transparent;
 
+    &.active {
+        padding: 10px;
+        background-color: #000746;
+        border-bottom: 1px solid #000;
+    }
+
     .container-header {
         @include mixins.container;
         justify-content: space-between;
+
+        @include mixins.md(1024px) {
+            width: 95%;
+        }
 
         @include mixins.md(768px) {
             width: 95%;
@@ -100,6 +110,10 @@
                 display: flex;
                 list-style: none;
                 gap: 1rem;
+
+                &.active {
+                    top: 52px;
+                }
 
                 @include mixins.md(768px) {
                     position: absolute;
