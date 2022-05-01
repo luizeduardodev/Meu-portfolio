@@ -53,6 +53,14 @@
         }
 
         .container-slides {
+            @include mixins.md(1024px) {
+                width: 95%;
+            }
+
+            @include mixins.md(800px) {
+                @include mixins.flex-center-not-width;
+            }
+
             @include mixins.md(768px) {
                 @include mixins.flex-center-not-width;
             }
@@ -61,6 +69,10 @@
             margin-top: 30px;
 
             .glide {
+                @include mixins.md(800px) {
+                    width: 70%;
+                }    
+
                 @include mixins.md(768px) {
                     width: 65%;
                 }
@@ -207,6 +219,10 @@
                 }
 
                 .glide__arrow {
+                    @include mixins.md(1024px) {
+                        padding: 8px 13px;
+                    }
+
                     @include mixins.md(425px) {
                         top: 90%;
                         color: white;
@@ -221,6 +237,13 @@
                 }
 
                 .glide__arrow--left {
+                    @include mixins.md(1024px) {
+                        @include mixins.flex-center-not-width;
+                        left: -2.2rem;
+                        width: 3%;
+                        height: 7%;
+                    }
+
                     @include mixins.md(425px) {
                         display: flex;
                         justify-content: center;
@@ -234,6 +257,13 @@
                 }
 
                 .glide__arrow--right {
+                    @include mixins.md(1024px) {
+                        @include mixins.flex-center-not-width;
+                        right: -2.2rem;
+                        width: 3%;
+                        height: 7%;
+                    }
+
                     @include mixins.md(425px) {
                         display: flex;
                         justify-content: center;
