@@ -140,7 +140,7 @@
         }
 
         .social-medias {
-            @include mixins.md(768px) {
+            @include mixins.md(1024px) {
                 @keyframes animation {
                     from {
                         opacity: 0;
