@@ -20,14 +20,14 @@
 
   <script src="https://kit.fontawesome.com/b47724bbe9.js" crossorigin="anonymous"></script>
 
+  <!-- Styles Css -->
+  <link rel="stylesheet" href="assets/css/style.min.css">
+  <link rel="icon" href="assets/img/favIcon.png">
+
   <!-- Glide.js -->
   <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
   <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
   <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
-
-  <!-- Styles Css -->
-  <link rel="stylesheet" href="/assets/css/Style.min.css">
-  <link rel="icon" href="/assets/img/favIcon.png">
 
   <!-- Biblioteca Animação Seções -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -40,7 +40,11 @@
       <a href="#main" id="logo">Portfólio</a>
 
       <nav id="navbar-list">
-        <button id="btn-mobile"><span id="hamburger"></span></button>
+        <button class="hamburger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
 
         <ul id="menu">
           <li><a href="#about-section" class="nav__link animation-um">Quem sou eu</a></li>
@@ -219,7 +223,8 @@
                     <span><i class="fa-brands fa-js"></i></span>
                     <span><i class="fa-brands fa-sass"></i></span>
                   </div>
-                  <a href="https://galleriacomsass.netlify.app/" target="_blank"><i class="fas fa-link"></i>Visite o site</a>
+                  <a href="https://galleriacomsass.netlify.app/" target="_blank"><i class="fas fa-link"></i>Visite o
+                    site</a>
                 </li>
               </ul>
             </div>
@@ -241,7 +246,8 @@
       <div class="container-skills">
         <h2 data-aos="fade-up" data-aos-duration="2000">Conhecimentos</h2>
         <div class="container-cards" data-aos="fade-down-right" data-aos-duration="2000">
-          <span class="information-one" data-aos="fade-up" data-aos-duration="2000">*Clique sobre o card para ler*</span>
+          <span class="information-one" data-aos="fade-up" data-aos-duration="2000">*Clique sobre o card para
+            ler*</span>
           <div class="card">
             <div class="flipper">
               <div class="front">
@@ -308,7 +314,7 @@
     </section>
     <!--Fim da section skills-->
   </main>
-  <!--Fim do Main-->
+  <!--Fim do Main - conteudo principal -->
 
   <footer id="contact-section">
     <div class="container-contact">
@@ -332,7 +338,8 @@
           </div>
           <div class="grid2 input" data-aos="fade-right" data-aos-duration="2000">
             <label for="email">Seu Email</label>
-            <input type="email" name="email" required title="Formato: xxxxxx@gmail.com" id="email" placeholder="Insira o seu email">
+            <input type="email" name="email" required title="Formato: xxxxxx@gmail.com" id="email"
+              placeholder="Insira o seu email">
           </div>
           <div class="grid3 input input-assunto" data-aos="fade-up" data-aos-duration="2000">
             <label for="assunto">Seu assunto</label>
@@ -348,9 +355,7 @@
             value="Obrigado por entrar em contato! Responderei o mais rápido possível :)">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_subject" value="Email do meu Portfólio">
-
         </form>
-
       </div>
     </div>
   </footer>
