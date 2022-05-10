@@ -51,57 +51,45 @@
         }
 
         #navbar-list {
-
-            @include mixins.md(768px) {
-                #hamburger {
-                    display: block;
-                    width: 20px;
-                    border-top: 2px solid;
-                    color: white;
-                }
-
-                #hamburger::after,
-                #hamburger::before {
-                    content: '';
-                    display: block;
-                    width: 20px;
-                    height: 2px;
-                    background: currentColor;
-                    margin-top: 5px;
-                    transition: .3s;
-                    position: relative;
-                }
-
-                &.active #menu {
-                    left: 0;
-                    visibility: visible;
-                }
-
-                &.active #hamburger {
-                    border-top-color: transparent;
-                }
-
-                &.active #hamburger::before {
-                    transform: rotate(135deg);
-                }
-
-                &.active #hamburger::after {
-                    transform: rotate(-135deg);
-                    top: -7px;
-                }
+            &.active #menu {
+                left: 0;
+                visibility: visible;
             }
 
-            /* Menu mobile*/
-            #btn-mobile {
+            &.active .line:nth-child(1) {
+                transform: translateY(9px) rotate(45deg);
+            }
+
+            &.active .line:nth-child(2) {
+                opacity: 0;
+            }
+
+            &.active .line:nth-child(3) {
+                transform: translateY(-9px) rotate(-45deg);
+            }
+
+            /* Menu hamburger*/
+            .hamburger {
                 display: none;
 
                 @include mixins.md(768px) {
                     display: flex;
-                    padding: .5rem 1rem;
+                    flex-direction: column;
                     border: none;
-                    background: none;
+                    outline: none;
                     cursor: pointer;
-                    color: white;
+                    background-color: transparent;
+                    padding: 5px 0;
+
+                    .line {
+                        display: block;
+                        width: 25px;
+                        height: 3px;
+                        margin-block: 3px;
+                        border-radius: 4px;
+                        transition: transform .5s, opacity .25s;
+                        background-color: #fff;
+                    }
                 }
             }
 
@@ -112,23 +100,23 @@
                 gap: 1rem;
 
                 &.active {
-                    top: 52px;
+                    top: 56px;
                 }
 
                 @include mixins.md(768px) {
                     position: absolute;
+                    width: 50%;
+                    height: 100vh;
+                    top: 62px;
+                    left: -390px;
+                    z-index: 10000;
                     align-items: center;
                     justify-content: center;
                     flex-direction: column;
-                    width: 50%;
-                    top: 62px;
-                    height: 100vh;
-                    left: -390px;
-                    z-index: 10000;
-                    overflow-y: hidden;
                     visibility: hidden;
-                    transition: .6s;
+                    transition: .5s;
                     background: linear-gradient(0, #001aff, #000000);
+                    // overflow-y: hidden;
                 }
 
                 @keyframes animation-menu-desktop {
