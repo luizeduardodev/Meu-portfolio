@@ -26,6 +26,8 @@ $ cd nome_da_pasta
 
 # Instale as dependências
 $ npm install
+
+# Pronto. o projeto está instalado
 ```
 
 <h2>🚀 Tecnologias</h2>
