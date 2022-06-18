@@ -1,6 +1,7 @@
 const menuLinks = document.querySelectorAll("#menu a");
 const logo = document.getElementById("logo");
 
+//Pega o href do elemento clicado e retorna a sua posição na tela;
 function getDistanceFromTheTop(element) {
     const id = element.getAttribute("href");
     return document.querySelector(id).offsetTop;
@@ -24,7 +25,7 @@ function smoothScrollTo(endX, endY, duration) {
     const distanceY = endY - startY;
     const startTime = new Date().getTime();
 
-    duration = typeof duration !== "undefined" ? duration : 1500;
+    duration = typeof duration !== "undefined" ? duration : 1000;
 
     const easeInOutQuart = (time, from, distance, duration) => {
         if ((time /= duration / 2) < 1)
