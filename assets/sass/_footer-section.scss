@@ -1,0 +1,32 @@
+@use "mixins";
+
+#footer-section {
+    @include mixins.limitedWidth;
+    @include mixins.displayFlex(flex, center, center);
+
+    padding-block: 2rem;
+
+    text-align: center;
+
+    p {
+        font-size: 1.6rem;
+
+        @include mixins.md(425px) {
+            width: 95%;
+        }
+
+        @include mixins.md(320px) {
+            font-size: 1.2rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+
+            @include mixins.md(320px) {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

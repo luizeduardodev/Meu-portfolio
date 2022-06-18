@@ -1,0 +1,229 @@
+@use "mixins";
+
+#skills-section {
+    padding-block: 10rem;
+
+    border-bottom: 2px solid #000746;
+
+    .wrapper {
+        @include mixins.md(1024px) {
+            width: 95%;
+        }
+
+        @include mixins.md(768px) {
+            width: 95%;
+        }
+
+        @include mixins.displayFlex(flex, center, center);
+        @include mixins.limitedWidth;
+        flex-direction: column;
+
+        header {
+            h2 {
+                @include mixins.md(768px) {
+                    font-size: 2.24rem;
+                }
+
+                @include mixins.md(425px) {
+                    font-size: 2.08rem;
+                }
+
+                @include mixins.md(375px) {
+                    font-size: 1.92rem;
+                }
+
+                @include mixins.md(320px) {
+                    font-size: 1.76rem;
+                }
+
+                font-size: 2.4rem;
+                font-weight: bold;
+
+                &::after {
+                    @include mixins.buttonLine;
+                }
+            }
+        }
+
+        .skills-content {
+            @include mixins.displayFlex(flex, center, center);
+            flex-wrap: wrap;
+            gap: 1.6rem;
+
+            width: 100%;
+
+            margin-top: 3rem;
+
+            .information-one {
+                @include mixins.md(768px) {
+                    width: 100%;
+                    
+                    display: block;
+                }
+
+                @include mixins.md(425px) {
+                    font-size: 1.44rem;
+                }
+
+                @include mixins.md(375px) {
+                    font-size: 1.28rem;
+                }
+
+                @include mixins.md(320px) {
+                    font-size: 1.12rem;
+                }
+
+                display: none;
+            }
+
+            .card {
+                @include mixins.md(768px) {
+                    width: 48.8%;
+                    height: 155px;
+                }
+
+                @include mixins.md(425px) {
+                    width: 47%;
+                    padding: 0 0.3rem;
+                }
+
+                @include mixins.md(375px) {
+                    width: 46%;
+                    height: 140px;
+                }
+
+                @include mixins.md(320px) {
+                    width: 47%;
+                    height: 130px;
+                }
+
+                @include mixins.displayFlex(flex, center, center);
+                flex-direction: column;
+                
+                width: 20%;
+                height: 15.5rem;
+                
+                position: relative;
+
+                perspective: 1000px;
+                
+                padding: 0 0.5rem;
+
+                transition: all 0.3s ease-in-out;
+                cursor: pointer;
+
+                @include mixins.BackgroundImageDesign;
+
+                &::before {
+                    @include mixins.darkEffect;
+                }
+
+                .flipper {
+                    @include mixins.displayFlex(flex, center, center);
+                    flex-direction: column;
+
+                    width: 100%;
+                    height: 100%;
+
+                    position: relative;
+
+                    transform-style: preserve-3d;
+                    transition: transform 0.8s;
+
+                    .front {
+                        @include mixins.displayFlex(flex, center, center);
+                        flex-direction: column;
+
+                        @include mixins.flipperSetup;
+                    }
+
+                    .back {
+                        @include mixins.flipperSetup;
+
+                        transform: rotateY(180deg);
+
+                        .span2 {
+                            @include mixins.md(425px) {
+                                font-size: 1.28rem;
+                            }
+
+                            @include mixins.md(375px) {
+                                font-size: 1.12rem;
+                            }
+
+                            @include mixins.md(320px) {
+                                font-size: 0.96rem;
+                            }
+
+                            width: 100%;
+
+                            position: absolute;
+                            top: 50%;
+
+                            font-size: 1.44rem;
+
+                            transform: translateY(-50%);
+                            text-align: center;
+
+                            color: #fff;
+                        }
+                    }
+
+                    i {
+                        @include mixins.md(425px) {
+                            font-size: 3.7rem;
+                        }
+
+                        @include mixins.md(375px) {
+                            font-size: 3.2rem;
+                        }
+
+                        @include mixins.md(320px) {
+                            font-size: 2.9rem;
+                        }
+
+                        position: relative;
+                        font-size: 4rem;
+                        margin-bottom: 5px;
+
+                        color: #fff;
+                    }
+
+                    span {
+                        @include mixins.md(425px) {
+                            font-size: 1.6rem;
+                        }
+
+                        @include mixins.md(375px) {
+                            font-size: 1.44rem;
+                        }
+
+                        @include mixins.md(320px) {
+                            font-size: 1.28rem;
+                        }
+
+                        position: relative;
+                        font-size: 1.76rem;
+
+                        color: #fff;
+                    }
+                }
+
+                &:hover .flipper {
+                    transform: rotateY(180deg);
+                }
+            }
+        }
+
+        .information {
+            @include mixins.md(768px) {
+                display: none;
+            }
+
+            width: 100%;
+
+            font-size: 1.6rem;
+            margin-top: 1rem;
+        }
+    }
+}
