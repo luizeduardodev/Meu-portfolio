@@ -1,4 +1,4 @@
-#navbar .container-header #logo::before,
+#navbar .wrapper #logo::before,
 #menu li a::before {
     content: '';
     position: absolute;
@@ -11,13 +11,13 @@
     background-color: white;
 }
 
-#navbar .container-header #logo:hover::before,
+#navbar .wrapper #logo:hover::before,
 #menu li a:hover::before {
     visibility: visible;
     transform: scaleX(1);
 }
 
-.container-principal::before {
+#home-section::before {
     content: '';
     width: 100%;
     height: 100vh;
