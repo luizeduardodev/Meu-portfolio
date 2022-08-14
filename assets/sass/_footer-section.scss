@@ -2,7 +2,6 @@
 
 #footer-section {
     @include mixins.limitedWidth;
-    @include mixins.displayFlex(flex, center, center);
 
     padding-block: 2rem;
 
