@@ -163,11 +163,7 @@
                             }
 
                             .container-tecnologies {
-                                @include mixins.displayFlex(
-                                    flex,
-                                    center,
-                                    flex-start
-                                );
+                                @include mixins.displayFlex(flex, center, flex-start);
                                 flex-wrap: wrap;
                                 gap: 1.61rem;
 
