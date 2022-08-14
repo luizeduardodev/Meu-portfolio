@@ -14,8 +14,8 @@
             width: 95%;
         }
 
-        @include mixins.displayFlex(flex, center, center);
         @include mixins.limitedWidth;
+        @include mixins.displayFlex(flex, center, center);
         flex-direction: column;
 
         header {
@@ -56,8 +56,6 @@
 
             width: 100%;
 
-            position: relative;
-
             margin-top: 2rem;
             padding: 1rem;
 
@@ -85,7 +83,6 @@
                 position: relative;
 
                 width: 40%;
-
                 padding: 5rem;
 
                 color: #fff;
