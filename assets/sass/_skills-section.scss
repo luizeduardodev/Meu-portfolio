@@ -14,8 +14,8 @@
             width: 95%;
         }
 
-        @include mixins.displayFlex(flex, center, center);
         @include mixins.limitedWidth;
+        @include mixins.displayFlex(flex, center, center);
         flex-direction: column;
 
         header {
@@ -37,6 +37,7 @@
                 }
 
                 font-size: 2.4rem;
+                
                 font-weight: bold;
 
                 &::after {
@@ -57,7 +58,7 @@
             .information-one {
                 @include mixins.md(768px) {
                     width: 100%;
-                    
+
                     display: block;
                 }
 
@@ -99,14 +100,14 @@
 
                 @include mixins.displayFlex(flex, center, center);
                 flex-direction: column;
-                
+
                 width: 20%;
                 height: 15.5rem;
-                
+
                 position: relative;
 
                 perspective: 1000px;
-                
+
                 padding: 0 0.5rem;
 
                 transition: all 0.3s ease-in-out;
@@ -183,8 +184,9 @@
                         }
 
                         position: relative;
+
                         font-size: 4rem;
-                        margin-bottom: 5px;
+                        margin-bottom: 0.5rem;
 
                         color: #fff;
                     }
@@ -203,6 +205,7 @@
                         }
 
                         position: relative;
+                        
                         font-size: 1.76rem;
 
                         color: #fff;
