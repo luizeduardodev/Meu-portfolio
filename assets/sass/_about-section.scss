@@ -60,7 +60,7 @@
             }
 
             width: 100%;
-            
+
             @include mixins.displayFlex(flex, center, center);
             @include mixins.BackgroundImageDesign;
 
@@ -132,7 +132,10 @@
                         }
 
                         font-size: 1.76rem;
-                        margin-bottom: 1rem;
+
+                        &:not(:last-child) {
+                            margin-bottom: 1rem;
+                        }
                     }
                 }
             }
