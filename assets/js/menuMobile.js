@@ -12,8 +12,8 @@ hamburger.addEventListener("click", () => {
 //Função para fechar o menu assim que clicar fora dele;
 const removeMenu = () => {
     nav.classList.remove("active");
-}
+};
 
-navLink.forEach(n => n.addEventListener("click", removeMenu));
+navLink.forEach((n) => n.addEventListener("click", removeMenu));
 main.addEventListener("click", removeMenu);
 logoo.addEventListener("click", removeMenu);
