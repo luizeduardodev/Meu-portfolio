@@ -604,7 +604,7 @@ body::-webkit-scrollbar-thumb {
           justify-content: center;
   gap: 0.5rem;
   margin-top: 1rem;
-  border-radius: 0.5rem;
+  border-radius: 2rem;
   padding: 0.8rem;
   border: 2px solid #fff;
   -webkit-box-reflect: below 7px linear-gradient(transparent, rgba(0, 0, 0, 0.1333333333));
@@ -849,6 +849,14 @@ body::-webkit-scrollbar-thumb {
     font-size: 1.76rem;
   }
 }
+#about-section .wrapper header h2::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 0.2rem;
+  margin-inline: auto;
+  background-color: #000;
+}
 #about-section .wrapper .about-content {
   width: 100%;
   display: -webkit-box;
@@ -860,13 +868,13 @@ body::-webkit-scrollbar-thumb {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 0.2rem;
   background: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(#001aff), to(#000000));
   background: linear-gradient(0, #001aff, #000000);
   border: 2px solid #000957;
   position: relative;
   padding: 2rem;
   margin-top: 3rem;
+  border-radius: 2rem 2rem 2.2rem 2.2rem;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -895,13 +903,14 @@ body::-webkit-scrollbar-thumb {
   content: "";
   width: 100%;
   height: 100%;
+  border-radius: 2rem;
   position: absolute;
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.8);
 }
 #about-section .wrapper .about-content .about-img img {
-  width: 65%;
+  width: 75%;
   position: relative;
   border-radius: 50px;
 }
@@ -1113,9 +1122,9 @@ body::-webkit-scrollbar-thumb {
   height: 46rem;
   position: relative;
   padding: 0.5rem;
+  border-radius: 2rem 2rem 2.2rem 2.2rem;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
-  border-radius: 0.2rem;
   background: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(#001aff), to(#000000));
   background: linear-gradient(0, #001aff, #000000);
   border: 2px solid #000957;
@@ -1133,10 +1142,6 @@ body::-webkit-scrollbar-thumb {
 @media screen and (max-width: 320px) {
   #jobs-section .wrapper .jobs-content-slides .glide .glide__track .glide__slides .glide__slide {
     height: 320px;
-  }
-}
-@media screen and (max-width: 320px) {
-  #jobs-section .wrapper .jobs-content-slides .glide .glide__track .glide__slides .glide__slide {
     gap: 0.42rem;
   }
 }
@@ -1144,6 +1149,7 @@ body::-webkit-scrollbar-thumb {
   content: "";
   width: 100%;
   height: 100%;
+  border-radius: 2rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -1278,6 +1284,7 @@ body::-webkit-scrollbar-thumb {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 0.8rem;
+  border-radius: 2rem;
 }
 @media screen and (max-width: 375px) {
   #jobs-section .wrapper .jobs-content-slides .glide .glide__track .glide__slides .glide__slide a {
@@ -1296,7 +1303,7 @@ body::-webkit-scrollbar-thumb {
 }
 #jobs-section .wrapper .jobs-content-slides .glide .glide__arrow {
   padding: 1rem 1.5rem;
-  border-radius: 0.2rem;
+  border-radius: 1rem;
   font-size: 2.1rem;
   border: 2px solid rgba(58, 58, 58, 0.5);
   color: #000;
@@ -1394,6 +1401,7 @@ body::-webkit-scrollbar-thumb {
   -webkit-transition: all 0.15s ease-in;
   transition: all 0.15s ease-in;
   margin-top: 2rem;
+  border-radius: 2rem;
 }
 @media screen and (max-width: 375px) {
   #jobs-section .wrapper .link-github {
@@ -1535,10 +1543,10 @@ body::-webkit-scrollbar-thumb {
   -webkit-perspective: 1000px;
           perspective: 1000px;
   padding: 0 0.5rem;
+  border-radius: 2rem 2rem 2.2rem 2.2rem;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
-  border-radius: 0.2rem;
   background: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(#001aff), to(#000000));
   background: linear-gradient(0, #001aff, #000000);
   border: 2px solid #000957;
@@ -1571,6 +1579,7 @@ body::-webkit-scrollbar-thumb {
   content: "";
   width: 100%;
   height: 100%;
+  border-radius: 2rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -1737,11 +1746,6 @@ body::-webkit-scrollbar-thumb {
     width: 95%;
   }
 }
-@media screen and (max-width: 768px) {
-  #contact-section .wrapper {
-    width: 95%;
-  }
-}
 #contact-section .wrapper header h2 {
   font-size: 2.4rem;
   font-weight: bold;
@@ -1788,9 +1792,9 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   margin-top: 2rem;
   padding: 1rem;
+  border-radius: 2rem 2rem 2.2rem 2.2rem;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
-  border-radius: 0.2rem;
   background: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(#001aff), to(#000000));
   background: linear-gradient(0, #001aff, #000000);
   border: 2px solid #000957;
@@ -1807,6 +1811,7 @@ body::-webkit-scrollbar-thumb {
   content: "";
   width: 100%;
   height: 100%;
+  border-radius: 2rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -1941,7 +1946,7 @@ body::-webkit-scrollbar-thumb {
   padding: 0.8rem;
   font-size: 1.44rem;
   margin-bottom: 1rem;
-  border-radius: 0.2rem;
+  border-radius: 2rem;
   outline: none;
   border: none;
   -webkit-transition: all 0.15s ease-in-out;
@@ -1967,7 +1972,7 @@ body::-webkit-scrollbar-thumb {
   padding: 0.8rem;
   font-size: 1.44rem;
   margin-bottom: 1rem;
-  border-radius: 0.2rem;
+  border-radius: 2rem;
   outline: none;
   border: none;
   -webkit-transition: all 0.15s ease-in-out;
@@ -1991,7 +1996,7 @@ body::-webkit-scrollbar-thumb {
   grid-area: btn-enviar;
   justify-self: flex-end;
   width: 30%;
-  border-radius: 0.2rem;
+  border-radius: 2rem;
   padding: 0.8rem;
   font-size: 1.76rem;
   margin-right: 5.7rem;
