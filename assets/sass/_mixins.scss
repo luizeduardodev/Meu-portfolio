@@ -11,8 +11,6 @@
 }
 
 @mixin BackgroundImageDesign {
-    border-radius: 0.2rem;
-
     background: linear-gradient(0, #001aff, #000000);
     border: 2px solid #000957;
 }
@@ -22,6 +20,7 @@
 
     width: 100%;
     height: 100%;
+    border-radius: 2rem;
 
     position: absolute;
     top: 0;
