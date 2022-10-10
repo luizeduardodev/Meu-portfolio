@@ -6,6 +6,10 @@
     border-bottom: 2px solid #000746;
 
     .wrapper {
+        @include mixins.limitedWidth;
+        @include mixins.displayFlex(flex, center, center);
+        flex-direction: column;
+
         @include mixins.md(1024px) {
             width: 95%;
         }
@@ -14,12 +18,12 @@
             width: 95%;
         }
 
-        @include mixins.limitedWidth;
-        @include mixins.displayFlex(flex, center, center);
-        flex-direction: column;
-
         header {
             h2 {
+                font-size: 2.4rem;
+
+                font-weight: bold;
+
                 @include mixins.md(768px) {
                     font-size: 2.24rem;
                 }
@@ -35,10 +39,6 @@
                 @include mixins.md(320px) {
                     font-size: 1.76rem;
                 }
-
-                font-size: 2.4rem;
-                
-                font-weight: bold;
 
                 &::after {
                     @include mixins.buttonLine;
@@ -56,6 +56,8 @@
             margin-top: 3rem;
 
             .information-one {
+                display: none;
+
                 @include mixins.md(768px) {
                     width: 100%;
 
@@ -73,11 +75,27 @@
                 @include mixins.md(320px) {
                     font-size: 1.12rem;
                 }
-
-                display: none;
             }
 
             .card {
+                @include mixins.displayFlex(flex, center, center);
+                flex-direction: column;
+
+                width: 20%;
+                height: 15.5rem;
+
+                position: relative;
+
+                perspective: 1000px;
+
+                padding: 0 0.5rem;
+                border-radius: 2rem 2rem 2.2rem 2.2rem;
+
+                transition: all 0.3s ease-in-out;
+                cursor: pointer;
+
+                @include mixins.BackgroundImageDesign;
+
                 @include mixins.md(768px) {
                     width: 48.8%;
                     height: 155px;
@@ -97,23 +115,6 @@
                     width: 47%;
                     height: 130px;
                 }
-
-                @include mixins.displayFlex(flex, center, center);
-                flex-direction: column;
-
-                width: 20%;
-                height: 15.5rem;
-
-                position: relative;
-
-                perspective: 1000px;
-
-                padding: 0 0.5rem;
-
-                transition: all 0.3s ease-in-out;
-                cursor: pointer;
-
-                @include mixins.BackgroundImageDesign;
 
                 &::before {
                     @include mixins.darkEffect;
@@ -144,18 +145,6 @@
                         transform: rotateY(180deg);
 
                         .span2 {
-                            @include mixins.md(425px) {
-                                font-size: 1.28rem;
-                            }
-
-                            @include mixins.md(375px) {
-                                font-size: 1.12rem;
-                            }
-
-                            @include mixins.md(320px) {
-                                font-size: 0.96rem;
-                            }
-
                             width: 100%;
 
                             position: absolute;
@@ -167,10 +156,29 @@
                             text-align: center;
 
                             color: #fff;
+
+                            @include mixins.md(425px) {
+                                font-size: 1.28rem;
+                            }
+
+                            @include mixins.md(375px) {
+                                font-size: 1.12rem;
+                            }
+
+                            @include mixins.md(320px) {
+                                font-size: 0.96rem;
+                            }
                         }
                     }
 
                     i {
+                        position: relative;
+
+                        font-size: 4rem;
+                        margin-bottom: 0.5rem;
+
+                        color: #fff;
+
                         @include mixins.md(425px) {
                             font-size: 3.7rem;
                         }
@@ -182,16 +190,15 @@
                         @include mixins.md(320px) {
                             font-size: 2.9rem;
                         }
-
-                        position: relative;
-
-                        font-size: 4rem;
-                        margin-bottom: 0.5rem;
-
-                        color: #fff;
                     }
 
                     span {
+                        position: relative;
+
+                        font-size: 1.76rem;
+
+                        color: #fff;
+
                         @include mixins.md(425px) {
                             font-size: 1.6rem;
                         }
@@ -203,12 +210,6 @@
                         @include mixins.md(320px) {
                             font-size: 1.28rem;
                         }
-
-                        position: relative;
-                        
-                        font-size: 1.76rem;
-
-                        color: #fff;
                     }
                 }
 
@@ -219,14 +220,14 @@
         }
 
         .information {
-            @include mixins.md(768px) {
-                display: none;
-            }
-
             width: 100%;
 
             font-size: 1.6rem;
             margin-top: 1rem;
+
+            @include mixins.md(768px) {
+                display: none;
+            }
         }
     }
 }
