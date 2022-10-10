@@ -18,6 +18,9 @@
             @include mixins.displayFlex(flex, center, center);
 
             h2 {
+                font-size: 2.4rem;
+                font-weight: bold;
+
                 @include mixins.md(768px) {
                     font-size: 2.24rem;
                 }
@@ -34,10 +37,6 @@
                     font-size: 1.76rem;
                 }
 
-                font-size: 2.4rem;
-
-                font-weight: bold;
-
                 &::after {
                     @include mixins.buttonLine;
                 }
@@ -45,6 +44,9 @@
         }
 
         .jobs-content-slides {
+            width: 100%;
+            margin-top: 3rem;
+
             @include mixins.md(1024px) {
                 width: 95%;
             }
@@ -56,9 +58,6 @@
             @include mixins.md(768px) {
                 @include mixins.displayFlex(flex, center, center);
             }
-
-            width: 100%;
-            margin-top: 3rem;
 
             .glide {
                 @include mixins.md(800px) {
@@ -76,6 +75,20 @@
                 .glide__track {
                     .glide__slides {
                         .glide__slide {
+                            @include mixins.displayFlex(flex, center, center);
+                            flex-direction: column;
+                            gap: 0.48rem;
+                            height: 46rem;
+
+                            position: relative;
+
+                            padding: 0.5rem;
+                            border-radius: 2rem 2rem 2.2rem 2.2rem;
+
+                            transition: 0.3s ease-in-out;
+
+                            @include mixins.BackgroundImageDesign;
+
                             @include mixins.md(425px) {
                                 height: 400px;
                             }
@@ -86,23 +99,6 @@
 
                             @include mixins.md(320px) {
                                 height: 320px;
-                            }
-
-                            @include mixins.displayFlex(flex, center, center);
-                            flex-direction: column;
-                            gap: 0.48rem;
-
-                            height: 46rem;
-
-                            position: relative;
-
-                            padding: 0.5rem;
-
-                            transition: 0.3s ease-in-out;
-
-                            @include mixins.BackgroundImageDesign;
-
-                            @include mixins.md(320px) {
                                 gap: 0.42rem;
                             }
 
@@ -111,6 +107,15 @@
                             }
 
                             h3 {
+                                width: 100%;
+
+                                position: relative;
+
+                                font-size: 1.92rem;
+
+                                text-align: center;
+                                color: #fff;
+
                                 @include mixins.md(768px) {
                                     font-size: 1.76rem;
                                 }
@@ -122,15 +127,6 @@
                                 @include mixins.md(320px) {
                                     font-size: 1.44rem;
                                 }
-
-                                width: 100%;
-
-                                position: relative;
-
-                                font-size: 1.92rem;
-
-                                text-align: center;
-                                color: #fff;
                             }
 
                             img {
@@ -140,6 +136,15 @@
                             }
 
                             .description {
+                                width: 100%;
+
+                                position: relative;
+
+                                font-size: 1.92rem;
+                                margin-bottom: 0.5rem;
+
+                                color: #fff;
+
                                 @include mixins.md(768px) {
                                     font-size: 1.76rem;
                                 }
@@ -151,19 +156,14 @@
                                 @include mixins.md(375px) {
                                     font-size: 1.44rem;
                                 }
-
-                                width: 100%;
-
-                                position: relative;
-
-                                font-size: 1.92rem;
-                                margin-bottom: 0.5rem;
-
-                                color: #fff;
                             }
 
                             .container-tecnologies {
-                                @include mixins.displayFlex(flex, center, flex-start);
+                                @include mixins.displayFlex(
+                                    flex,
+                                    center,
+                                    flex-start
+                                );
                                 flex-wrap: wrap;
                                 gap: 1.61rem;
 
@@ -212,15 +212,6 @@
                             }
 
                             a {
-                                @include mixins.md(375px) {
-                                    padding: 6px;
-                                }
-
-                                @include mixins.md(320px) {
-                                    padding: 5px;
-                                    font-size: 1.44rem;
-                                }
-
                                 @include mixins.buttonDesign;
 
                                 position: relative;
@@ -230,6 +221,16 @@
                                 justify-content: center;
 
                                 gap: 0.8rem;
+                                border-radius: 2rem;
+
+                                @include mixins.md(375px) {
+                                    padding: 6px;
+                                }
+
+                                @include mixins.md(320px) {
+                                    padding: 5px;
+                                    font-size: 1.44rem;
+                                }
 
                                 &:hover {
                                     transform: translateY(-3px);
@@ -240,6 +241,13 @@
                 }
 
                 .glide__arrow {
+                    padding: 1rem 1.5rem;
+                    border-radius: 1rem;
+                    font-size: 2.1rem;
+
+                    border: 2px solid rgba(58, 58, 58, 0.5);
+                    color: #000;
+
                     @include mixins.md(1024px) {
                         padding: 0.8rem 1.3rem;
                     }
@@ -248,16 +256,11 @@
                         top: 90%;
                         color: #fff;
                     }
-
-                    padding: 1rem 1.5rem;
-                    border-radius: 0.2rem;
-                    font-size: 2.1rem;
-
-                    border: 2px solid rgba(58, 58, 58, 0.5);
-                    color: #000;
                 }
 
                 .glide__arrow--left {
+                    left: -6.4rem;
+
                     @include mixins.md(1024px) {
                         @include mixins.displayFlex(flex, center, center);
 
@@ -273,11 +276,11 @@
                         width: 5%;
                         height: 8%;
                     }
-
-                    left: -6.4rem;
                 }
 
                 .glide__arrow--right {
+                    right: -6.4rem;
+
                     @include mixins.md(1024px) {
                         @include mixins.displayFlex(flex, center, center);
 
@@ -293,13 +296,15 @@
                         width: 5%;
                         height: 8%;
                     }
-
-                    right: -6.4rem;
                 }
             }
         }
 
         .link-github {
+            @include mixins.buttonDesign;
+            margin-top: 2rem;
+            border-radius: 2rem;
+
             @include mixins.md(375px) {
                 font-size: 1.4rem;
                 padding: 0.7rem;
@@ -308,9 +313,6 @@
             @include mixins.md(320px) {
                 font-size: 1.44rem;
             }
-
-            @include mixins.buttonDesign;
-            margin-top: 2rem;
 
             &:hover {
                 transform: translateY(-3px);
