@@ -20,6 +20,10 @@
 
         header {
             h2 {
+                font-size: 2.4rem;
+
+                font-weight: bold;
+
                 @include mixins.md(768px) {
                     font-size: 2.24rem;
                 }
@@ -36,13 +40,26 @@
                     font-size: 1.76rem;
                 }
 
-                font-size: 2.4rem;
-
-                font-weight: bold;
+                &::after {
+                    @include mixins.buttonLine;
+                }
             }
         }
 
         .about-content {
+            width: 100%;
+
+            @include mixins.displayFlex(flex, center, center);
+            @include mixins.BackgroundImageDesign;
+
+            position: relative;
+
+            padding: 2rem;
+            margin-top: 3rem;
+            border-radius: 2rem 2rem 2.2rem 2.2rem;
+
+            transition: 0.3s;
+
             @include mixins.md(768px) {
                 flex-direction: column;
 
@@ -58,18 +75,6 @@
             @include mixins.md(375px) {
                 padding: 4rem 1rem;
             }
-
-            width: 100%;
-
-            @include mixins.displayFlex(flex, center, center);
-            @include mixins.BackgroundImageDesign;
-
-            position: relative;
-
-            padding: 2rem;
-            margin-top: 3rem;
-
-            transition: 0.3s;
 
             &::before {
                 @include mixins.darkEffect;
@@ -92,8 +97,7 @@
                         width: 120px;
                     }
 
-                    width: 65%;
-
+                    width: 75%;
                     position: relative;
 
                     border-radius: 50px;
