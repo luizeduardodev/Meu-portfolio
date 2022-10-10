@@ -1799,7 +1799,7 @@ body::-webkit-scrollbar-thumb {
   background: linear-gradient(0, #001aff, #000000);
   border: 2px solid #000957;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   #contact-section .wrapper .form-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1837,7 +1837,7 @@ body::-webkit-scrollbar-thumb {
   padding: 5rem;
   color: #fff;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   #contact-section .wrapper .form-content .form-content-info {
     width: 100%;
     -webkit-box-align: center;
@@ -1887,7 +1887,7 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   width: 60%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   #contact-section .wrapper .form-content form {
     width: 100%;
   }
@@ -2007,7 +2007,7 @@ body::-webkit-scrollbar-thumb {
   transition: all 0.15s ease;
   color: #fff;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   #contact-section .wrapper .form-content form .btn-enviar {
     grid-column: 1;
     justify-self: auto;
