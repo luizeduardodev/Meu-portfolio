@@ -21,13 +21,13 @@
         }
 
         .information {
-            @include mixins.md(425px) {
-                align-items: center;
-            }
-
             position: relative;
 
             padding: 2rem;
+
+            @include mixins.md(425px) {
+                align-items: center;
+            }
 
             header {
                 @include mixins.displayFlex(flex, baseline, center);
@@ -39,6 +39,15 @@
 
                 .typewriter {
                     h1 {
+                        display: inline-block;
+
+                        font-size: 4rem;
+                        margin-inline: auto;
+
+                        color: #fff;
+                        overflow: hidden;
+                        animation: down 3s ease;
+
                         @include mixins.md(768px) {
                             font-size: 3.2rem;
                         }
@@ -54,15 +63,6 @@
                         @include mixins.md(320px) {
                             font-size: 1.92rem;
                         }
-
-                        display: inline-block;
-
-                        font-size: 4rem;
-                        margin-inline: auto;
-
-                        color: #fff;
-                        overflow: hidden;
-                        animation: down 3s ease;
 
                         &::after {
                             content: "";
@@ -80,6 +80,11 @@
                 }
 
                 span {
+                    font-size: 1.92rem;
+
+                    color: #fff;
+                    animation: down 2s ease;
+
                     @include mixins.md(768px) {
                         font-size: 1.76rem;
                     }
@@ -92,14 +97,25 @@
                     @include mixins.md(320px) {
                         font-size: 1.44rem;
                     }
-
-                    font-size: 1.92rem;
-
-                    color: #fff;
-                    animation: down 2s ease;
                 }
 
                 .download {
+                    @include mixins.displayFlex(flex, center, center);
+                    gap: 0.5rem;
+
+                    margin-top: 1rem;
+                    border-radius: 2rem;
+                    padding: 0.8rem;
+
+                    border: 2px solid #fff;
+                    -webkit-box-reflect: below 7px
+                        linear-gradient(transparent, #0002);
+
+                    color: #fff;
+                    text-decoration: none;
+                    transition: 0.15s ease;
+                    animation: up 2s ease;
+
                     @include mixins.md(425px) {
                         padding: 0.7rem;
                         margin-bottom: 4rem;
@@ -112,22 +128,6 @@
                     @include mixins.md(320px) {
                         padding: 0.5rem;
                     }
-
-                    @include mixins.displayFlex(flex, center, center);
-                    gap: 0.5rem;
-
-                    margin-top: 1rem;
-                    border-radius: 0.5rem;
-                    padding: 0.8rem;
-
-                    border: 2px solid #fff;
-                    -webkit-box-reflect: below 7px
-                        linear-gradient(transparent, #0002);
-
-                    color: #fff;
-                    text-decoration: none;
-                    transition: 0.15s ease;
-                    animation: up 2s ease;
 
                     &:hover {
                         @include mixins.transparentButton;
